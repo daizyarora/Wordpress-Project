@@ -1,0 +1,423 @@
+/*------------------------------------*\
+  #NAVIGATION-1
+\*------------------------------------*/
+/**
+ * Main Navigation Bar: Mobile AND Desktop
+ */
+.navbar-1.navbar {
+    background: @color-white;
+    border: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    font-family: @font-family-primary;
+    font-size: @font-size-17;
+    font-weight: @font-weight-400;
+    letter-spacing: 0.050em;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 18;
+}
+
+/*Reviews Subpages Active States*/
+.reviews-subpage .navbar-1.navbar-default .navbar-nav>li>.nav-reviews {
+    color: fade(@color-black, 50%);
+}
+
+.reviews-subpage .navbar-1.navbar .navbar-nav>.open>a.nav-reviews {
+    color: @color-white;
+}
+
+.reviews-subpage .navbar-1.navbar .in .navbar-nav .open .dropdown-menu li a.nav-dropdown-reviews {
+    background: @color-white;
+    color:@color-primary;
+}
+
+.reviews-subpage .navbar-1 .dropdown-menu li a.nav-dropdown-reviews {
+    background: @color-white;
+    color: @color-primary;
+}
+
+.reviews-subpage .navbar-1.navbar .in .navbar-nav .open .dropdown-menu li .yamm-content a.nav-yamm-dropdown-reviews {
+    background: @color-white;
+    color: @color-primary;
+}
+
+.reviews-subpage .navbar-1.dropdown-menu li .yamm-content a.nav-yamm-dropdown-reviews {
+    background: @color-white;
+    color: @color-primary;
+}
+
+
+/*------------------------------------*\
+  #NAVIGATION: MOBILE SECTION
+\*------------------------------------*/
+
+/**
+ * Mobile Icon: Phone
+ */
+.navbar-1.navbar .navbar-brand {
+    color:  @color-black;
+    display: block;
+    font-size: (@font-size-17 * (1.14em / @font-size-17));
+    font-weight: @font-weight-400;
+    line-height: 50px;
+    margin: 0 0 0 15px;
+    padding: 0;
+    text-transform: lowercase;
+}
+
+/**
+ * Mobile Icon: Hamburger
+ */
+.navbar-1.navbar .navbar-toggle {
+    border: none;
+    color: @color-black;
+    font-size: (@font-size-17 * (1.14em / @font-size-17));
+    font-weight: @font-weight-400;
+    line-height: 50px;
+    margin: 0 15px 0 0;
+    padding: 0;
+    text-transform: lowercase;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.navbar-1.navbar .navbar-toggle:active,
+.navbar-1.navbar .navbar-toggle:focus,
+.navbar-1.navbar .navbar-toggle:hover,
+.navbar-1.navbar .navbar-brand:active,
+.navbar-1.navbar .navbar-brand:focus,
+.navbar-1.navbar .navbar-brand:hover {
+    background: transparent;
+    color: fade(@color-black, 50%);
+}
+
+/**
+ * Mobile: Mobile Icons Active State
+ */
+.navbar-1.navbar button[aria-expanded="true"] {
+    /*color: rgba(255, 255, 255, 1.0);*/
+}
+
+/**
+ * Mobile: Main Dropdown Container
+ */
+.navbar-1.navbar .in {}
+
+/**
+ * Mobile: Main Dropdown ul ("Home", "About", etc.)
+ */
+.navbar-1.navbar .in ul {}
+
+/**
+ * Mobile: Main Dropdown Options (e.g. "About")
+ */
+.navbar-1.navbar .in ul li {}
+
+/**
+ * Mobile: Individual Dropdown Menus (e.g. "About" dropdown)
+ */
+.navbar-1.navbar .in ul li.open ul {}
+
+/**
+ * Mobile: Dropdown Menu Changes
+ */
+.navbar-1 .navbar-nav .open .dropdown-menu>li>a {
+    line-height: 20px;
+    padding: 10px 15px 10px 25px;
+}
+
+/**
+ * Mobile: Dropdown Menu Changes
+ */
+.navbar-1.navbar .in .navbar-nav .open .dropdown-menu {
+    background: @color-primary;
+}
+
+.navbar-1.navbar .in .navbar-nav .open .dropdown-menu>li>a {
+    line-height: 20px;
+}
+
+/**
+ * Mobile: Options on Individual Dropdown Menus (e.g. "Company Background" option on "About" dropdown)
+ */
+.navbar-1.navbar .in .navbar-nav .open .dropdown-menu li a {
+    color:@color-white;
+}
+
+.navbar-1.navbar .in .navbar-nav .open .dropdown-menu li a:focus,
+.navbar-1.navbar .in .navbar-nav .open .dropdown-menu li a:hover {
+    background: transparent;
+    color: fade(@color-white, 50%);
+    text-decoration: none;
+}
+
+
+/**
+ * Mobile: Appearance of Currently Active/Open Option on Individual Dropdown Menus (e.g. "Company Background" when "Company Background" page is open)
+ */
+.navbar-1.navbar .in .navbar-nav .open .dropdown-menu li.active-top .active {
+    background: @color-white;
+    color: @color-primary;
+}
+
+
+/*------------------------------------*\
+  #NAVIGATION: DESKTOP SECTION
+\*------------------------------------*/
+
+/**
+ * Desktop: Navbar Options: Spacing Between
+ */
+.navbar-1 .navbar-nav>li>a {
+    line-height: 50px;
+    padding: 0 15px;
+}
+
+/**
+ * Desktop: Dropdown Menu Background 
+ */
+.navbar-1 .dropdown-menu {
+    background: @color-primary;
+    border-radius: 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+    font-size: 1em;
+}
+
+/**
+ * Desktop: Dropdown Menu Options
+ */
+.navbar-1 .dropdown-menu li a {
+    color: @color-white;
+    font-weight: inherit;
+    line-height: 1.42857;
+    padding: 10px 20px;
+}
+
+/**
+ * Desktop: Dropdown Menu Options: Hover
+ */
+.navbar-1 .dropdown-menu li a:focus,
+.navbar-1 .dropdown-menu li a:hover {
+    background: transparent;
+    color: fade(@color-white, 50%);
+    text-decoration: none;
+}
+
+/**
+ * Desktop: Appearance of Currently Active/Open Option on Individual Dropdown Menus (e.g. "Company Background" when "Company Background" page is open)
+ */
+.navbar-1 .dropdown-menu .active-top .active {
+    background: @color-white;
+    color: @color-primary;
+}
+
+
+/*---------------------------------------*\
+  #NAVIGATION: MOBILE AND DESKTOP SECTION
+\*---------------------------------------*/
+
+/**
+ * Mobile AND Desktop: Default
+ */
+.navbar-1.navbar .navbar-nav>li>a {
+    color: @color-black;
+    text-transform: none;
+}
+
+/**
+ * Mobile AND Desktop: Navbar Options: Active
+ */
+.navbar-1.navbar .navbar-nav>li>.active,
+.navbar-1.navbar .navbar-nav>.active-top>a {
+    color: fade(@color-black, 50%);
+}
+
+/**
+ * Mobile AND Desktop: Navbar Options: Hover
+ */
+.navbar-1.navbar .navbar-nav>li>a:focus,
+.navbar-1.navbar .navbar-nav>li>a:hover {
+    background: transparent;
+    color: fade(@color-black, 50%);
+}
+
+/**
+ * Mobile AND Desktop: Navbar Option When Corresponding Menu Is Open
+ */
+.navbar-1.navbar .navbar-nav>.open>a,
+.navbar-1.navbar .navbar-nav>.open>a:focus,
+.navbar-1.navbar .navbar-nav>.open>a:hover {
+    background: @color-primary;
+    border: none;
+    color: @color-white;
+}
+
+
+/*------------------------------------*\
+  #NAVIGATION: YAMM MEGA SECTION
+\*------------------------------------*/
+
+/**
+ * Yamm Mega Menu: Default Rules
+ */
+.navbar-1 .dropdown-menu li .yamm-content a {
+    display: block;
+    line-height: 1.111;
+    padding: 10px 15px 10px 25px;
+}
+
+.navbar-1 .dropdown-menu li .yamm-content strong {
+    color: rgba(255, 255, 255, 1.0);
+    font-size: 1.313em;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.navbar-1 .yamm-content .nav-title {
+    color: rgba(255, 255, 255, 1.0);
+    position: relative;
+    padding: 0 0 5px 0;
+    margin: 0 0 5px 0;
+}
+
+.navbar-1 .yamm-content .nav-title:after {
+    width: 100%;
+    border-bottom: 1px solid rgba(80, 80, 80, 0.5);
+    content: '';
+    height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+/*------------------------------------*\
+  #PAGE SPECIFIC STYLES
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  #MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {
+    .navbar-1.navbar .navbar-brand {
+        display: none;
+    }.navbar-1.navbar {
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+    /**
+   * Desktop: Navbar Options: Lines Between 
+   */
+    /*.navbar-1 .navbar-nav > li > a {
+    position: relative;
+  }
+
+  .navbar-1 .navbar-nav > li > a:before {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    content: '';
+    height: 50%;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  .navbar-1 .navbar-nav > li:first-child > a:before {
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+  }*/
+
+    /**
+  * Yamm Dropdown Customizations
+  */
+
+    .navbar-1 .container-fluid,
+    .navbar-1 .row,
+    .navbar-1 [class*=col] {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .navbar-1 .container-fluid {
+        padding: 0px 15px;
+    }
+
+    .navbar-1.yamm .dropdown.yamm-fw .dropdown-menu {
+        left: inherit !important;
+        right: 0;
+        width: 80%;
+    }
+   .navbar-1.yamm .dropdown.yamm-fw .dropdown-menu.dropdown-menu-about {
+        right: auto;
+        width: 512px;
+    }
+    .navbar-1.yamm .dropdown.yamm-fw .dropdown-menu.dropdown-menu-treatment-options {
+        right: auto;
+        width: 740px;
+    }
+
+    .navbar-1.yamm .dropdown.yamm-fw [class*="dropdown-menu-why-choose-us"] {
+        right: 0;
+        width: 835px;
+    }
+
+
+    .navbar-1 .yamm-content .row {
+        display: flex;
+    }
+
+    .navbar-1 .yamm-content .col-sm-3,
+    .navbar-1 .yamm-content .col-sm-4,
+    .navbar-1 .yamm-content .col-sm-6 {
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        // border-right: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar-1 .yamm-content .col-sm-3:first-child,
+    .navbar-1 .yamm-content .col-sm-4:first-child,
+    .navbar-1 .yamm-content .col-sm-6:first-child {
+        border-left: 1px solid rgba(255, 255, 255, 0);
+    }
+
+    .navbar-1 .yamm-content .col-sm-4:last-child,
+    .navbar-1 .yamm-content .col-sm-6:last-child {
+        border-right: 1px solid rgba(0, 0, 0, 0);
+    }
+
+  
+
+    .navbar-1 .navbar-right {
+        float: unset !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+
+}
+
+@media (min-width: 1366px) {
+    .navbar-1 .container-fluid {
+        padding: 0px 50px;
+    }
+}  
+
+
+@media (min-width: 1500px) {
+.navbar-1.yamm .dropdown.yamm-fw [class*="dropdown-menu-why-choose-us"] {
+        right: auto;
+    }
+}

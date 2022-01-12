@@ -1,0 +1,96 @@
+/*------------------------------------*\
+#CALLOUTS-7
+\*------------------------------------*/
+.callouts-7-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.callouts-7-wrapper .callouts {
+    background-image: url('/wp-content/themes/mh_express/design/callout-7/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 0px;
+    background-position: center;
+    background-color: @color-white;
+}
+
+.callouts-7-wrapper .callouts-7-title {
+    color: @color-black;
+    display: block;
+    font-family: @font-family-primary;
+    font-size: clamp(@font-size-26, 2.821vw ,@font-size-33);
+    font-weight: @font-weight-400;
+    line-height: 1.5;
+    letter-spacing: 0.025em;
+    padding-bottom: 25px;
+    text-transform: @text-transform-none;
+}
+
+.callouts-7-wrapper .callouts-7-copy {
+    color: @color-black;
+    display: block;
+    font-size: @font-size-20;
+    font-weight: @font-weight-400;
+    line-height: 1.7;
+    letter-spacing: 0.050em;
+    text-transform: @text-transform-none;
+    padding-bottom: 15px;
+}
+.callouts-7-wrapper .callouts-7-copy:last-of-type{
+    font-weight: @font-weight-700;
+}
+
+
+/*------------------------------------*\
+#PAGE-SPECIFIC STYLES
+\*------------------------------------*/
+/*------------------------------------*\
+#MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {
+    .callouts-7-wrapper .callouts {
+        padding: 80px 0px;
+    }
+
+    .callouts-7-wrapper .callouts-7-copy {
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .callouts-7-wrapper .callouts {
+        padding: 100px 0px 70px;
+    }
+
+    .callouts-7-wrapper .callouts-7-title {
+        font-size: @font-size-29;
+    }
+
+    .callouts-7-wrapper .callouts-7-copy {
+        padding-bottom: 30px;
+        font-size: @font-size-21;
+    }
+}
+
+@media (min-width: 1200px) {
+    .callouts-7-wrapper .callouts {
+        padding: 100px 0px 60px
+    }
+  
+    .callouts-7-wrapper .callouts-7-copy {
+        padding-bottom: 40px;
+        padding-right: 10px;
+    }
+      .callouts-7-wrapper .callouts-7-title {
+        font-size: @font-size-33;
+    }
+}
+
+@media (min-width: 1366px) {
+    .callouts-7-wrapper .callouts {
+        padding: 120px 0px 80px;
+    }
+}
+
+@media (min-width: 1500px) {}

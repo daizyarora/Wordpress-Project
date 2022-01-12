@@ -1,0 +1,113 @@
+@import "variables.less";
+@import "custom.less";
+
+/*------------------------------------*\
+  #MODULE
+\*------------------------------------*/
+
+.meet-the-doctor-wrapper {
+	background: rgba(229, 237, 244, 1.0);
+	position: relative;
+	z-index: 18;
+}
+.meet-the-doctor-wrapper .meet-the-doctor-content{
+  background: @color-secondary;
+  padding: 45px 29px 20px;
+}
+
+.meet-the-doctor-wrapper [class*=col]:not(:last-of-type){
+	margin-bottom: 15px;
+
+}
+
+	.meet-the-doctor-wrapper .meet-the-doctor {
+		padding: 50px 0;
+		position: relative;
+	}
+	.meet-the-doctor-wrapper .meet-the-doctor-content > span {
+		display: block;
+
+	}
+
+	.meet-the-doctor-wrapper .meet-the-doctor-title {
+		color: @color-white;
+		font-family: @font-family-secondary;
+		font-size: @font-size-28;
+		font-weight: @font-weight-700;
+		line-height: 1.3;
+		padding-bottom: 15px;
+	}
+	
+	.meet-the-doctor-wrapper span.meet-the-doctor-copy{
+		color: fade(@color-white, 80%);
+		font-family: @font-family-primary;
+		font-weight: @font-weight-400;
+		font-size: @font-size-18;
+		line-height: 1.5;
+		letter-spacing: 0.050em;
+		padding-bottom: 25px;
+		
+	}
+	
+
+	
+	
+
+		
+
+/*------------------------------------*\
+  #PAGE SPECIFIC STYLES
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  #MEDIA QUERIES
+\*------------------------------------*/
+
+@media (min-width: 768px) {
+	
+	.meet-the-doctor-wrapper .meet-the-doctor-title {
+		font-size: @font-size-29;
+		padding-bottom: 20px;
+	}
+	.meet-the-doctor-wrapper span.meet-the-doctor-copy {
+		font-size: @font-size-18;
+		padding-bottom: 30px;
+	}
+	.meet-the-doctor-wrapper [class*=col]{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.meet-the-doctor-image {
+    position: absolute;
+    right: -45px;
+    z-index: 1000;
+}
+.meet-the-doctor-wrapper .meet-the-doctor-content{
+	margin-top: 40px;
+	padding: 45px 20px 20px 80px;
+	position: relative;
+}
+}
+
+@media (min-width: 992px) {
+	.refresh-testimonials-6-wrapper::after{
+		bottom: -1px;
+	}
+		.meet-the-doctor-wrapper .meet-the-doctor-title {
+		font-size: @font-size-33;
+	}
+	.meet-the-doctor-wrapper span.meet-the-doctor-copy {
+		font-size: @font-size-21;
+		line-height: 1.6;
+	}
+}
+
+@media (min-width: 1200px) {
+	.meet-the-doctor-wrapper .meet-the-doctor {
+		padding: 70px 0px;
+	}
+	.meet-the-doctor-wrapper .meet-the-doctor-content{
+		padding-top: 65px;
+	}
+}

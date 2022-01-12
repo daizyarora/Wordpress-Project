@@ -1,0 +1,84 @@
+/*------------------------------------*\
+  #GALLERIES
+\*------------------------------------*/
+/*!
+** Gallery anchors
+*/
+a[data-gallery] {
+	display: inline-block;
+	padding: 0.4em;
+	text-align: center;
+}
+
+/*!
+** Bootstrap Gallery anchor tags (override Blue Imp Full Screen Gallery plugin styles)
+*/
+.bs-gallery a {
+	font-size: inherit;
+}
+
+/*!
+** Gallery Thumbnails (override Blue Imp Full Screen Gallery plugin styles)
+*/
+.img-thumbnail-sm {
+	margin: 0;
+}
+
+/*!
+** Prevent browser from looking for default Blue Imp Gallery loading.gif
+*/
+.blueimp-gallery > .slides > .slide-loading {
+	background: none;
+}
+
+/*!
+** Override default styles for next and prev links for Blue Imp Full Screen Gallery (styles make arrows conducive for Bootstrap Glyphicons)
+*/
+.blueimp-gallery > .next, 
+.blueimp-gallery > .prev {
+	font-size: 25px;
+	line-height: 46px;
+}
+
+/*!
+** Remove pointer events from Blueimp Gallery "#links" div when this ID is used to add extra functionality/options to gallery
+*/
+#links {
+	pointer-events: none;
+}
+
+	#links a {
+		pointer-events: auto;
+	}
+
+
+/*------------------------------------*\
+  #PAGE SPECIFIC STYLES
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  #MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {	
+	a[data-gallery] {
+		width: 48%;
+	}
+	
+	.img-thumbnail-sm {
+		width: 100%;
+	}
+}
+
+@media (min-width: 992px) {	
+}
+
+@media (min-width: 1200px) {
+	a[data-gallery] {
+		width: 32%;
+	}
+	
+	.blueimp-gallery .modal-dialog {
+		max-width: 65%;
+	}
+}

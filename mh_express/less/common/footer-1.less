@@ -1,0 +1,74 @@
+/*------------------------------------*\
+  #FOOTER-1
+\*------------------------------------*/
+.footer {
+	margin-top: auto;
+}
+
+.footer-1 {
+	background: @color-white;
+	padding: 20px 0 60px;
+}
+
+	.footer-1 .footer-content {
+		color: @color-secondary;
+		font-family: @font-family-secondary;
+		font-size: @font-size-21;
+		font-weight: @font-weight-400;
+		position: relative;
+		text-transform: @text-transform-none;
+	}
+
+		.footer-1 .footer-legal {
+			color: fade(@color-secondary, 50%);
+			font-family: @font-family-secondary;
+			font-size: @font-size-12;
+			font-weight: @font-weight-300;
+			line-height: 1.45;
+			margin-bottom: 15px;
+			text-transform: @text-transform-none;
+		}
+
+		.footer-1 .footer-legal.footer-legal-a11y {
+			margin-bottom: 0.8em;
+		}
+
+			.footer-1 .footer-legal a,
+			.footer-1 .footer-legal a:active,
+			.footer-1 .footer-legal a:focus,
+			.footer-1 .footer-legal a:hover {
+				color: fade(@color-secondary, 50%);
+			}
+
+			.footer-1 .footer-legal a.sitemap-link {
+				padding-left: 2em;
+			}
+
+		.footer-1 .footer-credit-cards-disclaimer {
+			font-size: @font-size-12;
+			line-height: 1;
+			margin-bottom: 0;
+		}
+
+/*------------------------------------*\
+  #PAGE SPECIFIC STYLES
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  #MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {
+	.footer-1 {
+		padding-bottom: 30px;
+	}
+}
+
+@media (min-width: 992px) {
+	.footer-1 .footer-legal span {
+		display: block;
+	}
+}
+
+@media (min-width: 1200px) {
+}

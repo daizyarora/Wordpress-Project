@@ -1,0 +1,97 @@
+/*------------------------------------*\
+  #CAROUSEL-1
+\*------------------------------------*/
+.carousel-1-wrapper {
+	position: relative;
+}
+
+	/*
+	** Carousel Slides
+	*/
+	.carousel-1-wrapper .slide-outer {
+		background: rgba(216, 232, 235, 1.0);
+		padding: 0 0 30px;
+	}
+
+		.carousel-1-wrapper .slide-header {
+			background: blue;
+			letter-spacing: -0.05em;
+			line-height: 100%;
+			padding: 15px 0;
+			text-align: center;
+			text-transform: @text-transform-none;
+		}
+
+			.carousel-1-wrapper .slide-title {
+				color: @color-white;
+				font-family: @font-family-primary;
+				font-size: @font-size-32;
+				font-weight: @font-weight-300;
+				display: inline-block;
+				line-height: 100%;
+				margin-bottom: 0;
+				text-transform: @text-transform-none;
+			}
+
+		.carousel-1-wrapper .slide-inner {
+			background: green;
+			padding: 40px 0;
+			width: 100%;
+		}
+
+			.carousel-1-wrapper .col-sm-4 {
+				margin-bottom: 15px;
+			}
+
+				.carousel-1-wrapper img {
+					margin-left: auto;
+					margin-right: auto;
+				}
+
+	/*
+	** Carousel Indicators
+	*/
+	.carousel-1-wrapper .carousel-indicators {
+		bottom: 15px;
+		left: 0;
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.carousel-1-wrapper .carousel-indicators li {
+		background: rgba(0, 0, 0, 0.5);
+		border: 1px solid @color-white;
+		border-radius: 23px;
+		cursor: pointer;
+		height: 23px;
+		pointer-events: auto;
+		width: 23px;
+	}
+
+	.carousel-1-wrapper .carousel-indicators li.active {
+		background: rgba(9, 55, 110, 1.0);
+		border: 1px solid red;
+		border-radius: 25px;
+		height: 25px;
+		width: 25px;
+	}
+
+/*------------------------------------*\
+  #PAGE-SPECIFIC STYLES
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  #MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {
+	.carousel-1-wrapper .col-sm-4 {
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,84 @@
+/*------------------------------------*\
+#CALLOUTS-XS
+\*------------------------------------*/
+.callouts-xs-wrapper {
+    position: relative;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.callouts-xs-wrapper-2 .callouts-xs-wrapper {
+    position: relative;
+ 
+}
+
+.callouts-xs-wrapper .callouts {
+    background: @color-secondary;
+    position: relative;
+}
+
+
+
+.callouts-xs-wrapper .callout {
+    align-items: center;
+    background:@color-secondary;
+    color: @color-white;
+    display: flex;
+    font-family: @font-family-primary;
+    font-size: @font-size-17;
+    font-weight: @font-weight-400;
+    justify-content: center;
+    line-height: 1;
+    letter-spacing: 0.050em;
+    min-height: 46px;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: @text-transform-none;
+}
+
+.callouts-xs-wrapper-2 .callouts-xs-wrapper .callouts {
+    background: @color-primary;
+}
+.callouts-xs-wrapper-2 .callouts-xs-wrapper .callout {
+    background: @color-primary;
+
+    padding: 0.9em;
+}
+
+.callouts-xs-wrapper .callout-text {
+    display: block;
+}
+
+.callouts-xs-wrapper .callout:active,
+.callouts-xs-wrapper .callout:focus,
+.callouts-xs-wrapper .callout:hover {
+    background: @color-secondary;
+    color: fade(@color-white, 60%);
+}
+
+
+.callouts-xs-wrapper-2  .callouts-xs-wrapper .callout:active,
+.callouts-xs-wrapper-2  .callouts-xs-wrapper .callout:focus,
+.callouts-xs-wrapper-2  .callouts-xs-wrapper .callout:hover {
+    background: fade(@color-primary, 60%);
+  
+}
+/*------------------------------------*\
+#PAGE-SPECIFIC STYLES
+\*------------------------------------*/
+.home .callouts-xs-wrapper {
+    margin-bottom: 0;
+}
+
+/*------------------------------------*\
+#MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px){}

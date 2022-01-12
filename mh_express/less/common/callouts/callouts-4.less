@@ -1,0 +1,224 @@
+/*------------------------------------*\
+  #MODULE
+\*------------------------------------*/
+
+.callouts-4-wrapper {
+    position: relative;
+    z-index: 18;
+}
+
+.callouts-4-wrapper .callouts-4 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 1px solid @color-black;
+}
+
+.callouts-4-wrapper .callout-4-link:hover,
+.callouts-4-wrapper .callout-4-link:focus,
+.callouts-4-wrapper .callout-4-link:active
+{
+	text-decoration:none;
+}
+.callouts-4-wrapper .callout-4-link:hover img
+{
+	opacity:0.5;
+	
+}
+
+.callouts-4-wrapper .callout-inner {
+    display: block;
+    padding: clamp(25px, 10%, 40px) clamp(20px, 10%, 30px) clamp(20px, 10%, 30px);
+    margin-bottom: clamp(20px, 10%, 30px);
+}
+.callouts-4-wrapper .callouts-4 .row [class*=col]{
+    border-right: 1px solid @color-black;
+    border-bottom: 1px solid @color-black;
+    border-left: 1px solid @color-black;
+}
+.callouts-4-wrapper .row:last-of-type .col-sm-6:last-of-type .callout-inner {
+    margin-bottom: 0px;
+}
+
+.callouts-4-wrapper .title-callouts-4 {
+    display: block;
+    color: @color-black;
+    font-family: @font-family-secondary;
+    font-size: clamp(@font-size-21, 2.821vw, @font-size-21);
+    font-weight: @font-weight-700;
+    letter-spacing: 0;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+
+.callouts-4-wrapper .copy-callouts-4 {
+    display: block;
+    color: @color-black;
+    font-size: @font-size-17;
+    font-weight: @font-weight-300;
+    letter-spacing: 0.050em;
+    line-height: 1.57;
+    padding-bottom: 10px;
+}
+
+	.callouts-4-wrapper .copy-callouts-4 span {
+		display: block;
+	}
+
+.callouts-4-wrapper .button-callouts-4 {
+    display: block;
+    font-family: @font-family-primary;
+    font-size: @font-size-17;
+    font-weight: @font-weight-400;
+}
+
+.callouts-4-wrapper .button-callouts-4 a {
+    color: @color-black;
+    display: inline-flex;
+    background-color: rgba(87, 192, 205, 1);
+    text-decoration: none;
+    letter-spacing: 0.100em;
+    min-height: 46px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+    box-shadow: 0 8px 10px 0 rgba(22, 22, 22, 0.3);
+    -webkit-box-shadow: 0 8px 10px 0 rgba(22, 22, 22, 0.3);
+}
+
+.callouts-4-wrapper .button-callouts-4 a:hover,
+.callouts-4-wrapper .button-callouts-4 a:active,
+.callouts-4-wrapper .button-callouts-4 a:focus {
+    color: fade(@color-black, 70%);
+    background-color: rgba(87, 192, 205, 0.7);
+
+}
+
+.callouts-4-wrapper .callouts-4-intro-title {
+    display: block;
+color: @color-black;
+font-family: @font-family-secondary;
+font-size: clamp(@font-size-37, 5.470vw, 3.04em);
+font-weight: @font-weight-700;
+letter-spacing: -0.025em;
+line-height: 1.1;
+margin-top: 0;
+margin-bottom: 10px;
+text-transform: @text-transform-none;
+}
+
+.callouts-4-wrapper .callouts-4-intro-copy {
+     color: @color-black;
+     display: block;
+    font-size: @font-size-21;
+    font-weight: @font-weight-400;
+    line-height: 1.57;
+    letter-spacing: 0.050em;
+    margin-bottom: 0;
+    padding-bottom: 0px;
+}
+
+.callouts-4-wrapper .callouts-4-intro {
+    padding: 30px 0px;
+}
+.callouts-4-wrapper .callouts-4-image {
+    display: block;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    overflow: hidden;
+    background: url('/wp-content/uploads/callout/callouts-4.jpg');
+    background-size: cover;
+    background-position: bottom;
+    margin: 0 auto 15px auto;
+}
+.callouts-4-wrapper .callouts-4-image img{
+    border-radius: 50%;
+	transition:all 0.5s ease;
+}
+
+
+/*------------------------------------*\
+  #PAGE SPECIFIC STYLES
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  #MEDIA QUERIES
+\*------------------------------------*/
+
+@media (min-width: 768px) {
+    .callouts-4-wrapper .callout-inner {
+        min-height: 335px;
+    }
+
+    .callouts-4-wrapper .copy-callouts-4 {
+        padding-bottom: 15px;
+    }
+
+    .callouts-4-wrapper .row:last-of-type .callout-inner{
+        margin-bottom: 0px;
+    } 
+    .callouts-4-wrapper .callouts-4-intro {
+    padding: 40px 0px;
+}
+.callouts-4-wrapper .callouts-4 .container-fluid{
+    padding-left: 0px;
+}
+.callouts-4-wrapper .callouts-4 .row [class*=col]{
+    border-left: none;
+}
+}
+
+@media (min-width: 992px) {
+    .callouts-4-wrapper .callouts-4-intro {
+    padding: 80px 0px 55px;
+}
+
+}
+
+@media (min-width: 1200px) {
+    .callouts-4-wrapper .callout-inner {
+        min-height: 461px;
+    }
+
+    .callouts-4-wrapper .callout-item-2 .copy-callouts-4 {
+        max-width: 375px;
+        margin: 0 auto;
+    }
+
+    .callouts-4-wrapper .callout-item-3 .copy-callouts-4 {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    .callouts-4-wrapper .callouts-4-intro {
+    padding: 90px 0px 65px;
+}
+.callouts-4-wrapper .callouts-4 .row [class*=col]{
+    border-right: none;
+    border-bottom: none;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.callouts-4-wrapper .col-sm-6 .callout-inner{
+    border-right: 1px solid @color-black;
+    padding: 60px 20px 40px;
+}
+.callouts-4-wrapper .callouts-4 .col-sm-6:last-of-type .callout-inner{
+    border-right: none;
+}
+.callouts-4-wrapper .callouts-4 {
+    border-bottom: 1px solid @color-black;
+}
+}
+
+@media (min-width: 1366px) {
+ 
+}
+
+@media (min-width: 1500px) {
+
+    .callouts-4-wrapper .container {
+        width: 1330px;
+    }
+}

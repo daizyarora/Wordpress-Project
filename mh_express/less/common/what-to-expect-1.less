@@ -1,0 +1,175 @@
+/*------------------------------------*\
+#MODULE
+\*------------------------------------*/
+.what-to-expect-1-wrapper {
+    position: relative;
+    z-index: 17;
+}
+
+.what-to-expect-1-wrapper .what-to-expect {
+    background: @color-white;
+    padding: 40px 0;
+    position: relative;
+}
+
+.what-to-expect-1-wrapper [class*=col]:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+.what-to-expect-1-wrapper .col-sm-12 {
+    margin-bottom: 15px;
+}
+
+.what-to-expect-1-wrapper .what-to-expect-title {
+    color: @color-black;
+    display: block;
+    font-family: @font-family-primary;
+    font-weight: @font-weight-700;
+    font-size: clamp(@font-size-24, 3.504vw, @font-size-41);
+    line-height: 1.19;
+    letter-spacing: 0;
+    padding-bottom: 10px;
+}
+
+.what-to-expect-1-wrapper .what-to-expect-sub-title {
+    color: @color-black;
+    display: block;
+    font-family: @font-family-primary;
+    font-size: @font-size-21;
+    font-weight: @font-weight-400;
+    line-height: 1.5;
+    letter-spacing: 0;
+    padding-bottom: 5px;
+}
+
+.what-to-expect-1-wrapper ul li {
+    display: flex;
+    line-height: 2.38;
+}
+
+.what-to-expect-1-wrapper ul li i {
+    font-size: @font-size-21;
+    color: @color-primary;
+    margin-right: 10px;
+    text-align: center;
+    font-weight: @font-weight-700;
+    padding-top: 12px;
+}
+
+.what-to-expect-1-wrapper .list-item {
+    font-size: @font-size-17;
+    font-weight: @font-weight-400;
+    letter-spacing: 0;
+}
+
+.what-to-expect-1-wrapper .what-to-expect-btn a {
+    background: @color-primary;
+    border-radius: 2em;
+    color: @color-white;
+    font-family: @font-family-primary;
+    font-weight: @font-weight-400;
+    font-size: @font-size-17;
+    min-height: 46px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0px 30px;
+}
+
+.what-to-expect-1-wrapper .what-to-expect-btn a:hover,
+.what-to-expect-1-wrapper .what-to-expect-btn a:active,
+.what-to-expect-1-wrapper .what-to-expect-btn a:focus {
+    opacity: 0.6;
+}
+.service-video iframe {
+    width: 100%;
+    height: auto;
+    border: none;
+}
+
+/*------------------------------------*\
+#PAGE SPECIFIC STYLES
+\*------------------------------------*/
+/*------------------------------------*\
+#MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {
+    .what-to-expect-1-wrapper .what-to-expect {
+        padding: 50px 0px;
+    }
+
+    .what-to-expect-1-wrapper .row:last-of-type {
+        display: flex;
+        align-items: center;
+    }
+
+    .what-to-expect-1-wrapper [class*=col]:not(:last-of-type) {
+        margin-bottom: 0px;
+    }
+
+    .what-to-expect-1-wrapper .col-sm-12 {
+        margin-bottom: 25px;
+    }
+
+    .what-to-expect-1-wrapper ul li i {
+        margin-top: 0;
+    }
+
+    .what-to-expect-1-wrapper .what-to-expect-content-list {
+        margin-bottom: 15px;
+    }
+    .service-video iframe {
+    width: 100%;
+    height: 234px;
+}
+    
+}
+
+@media (min-width: 992px) {
+    .what-to-expect-1-wrapper .col-sm-12 {
+        margin-bottom: 40px;
+    }
+
+    .what-to-expect-1-wrapper .what-to-expect-content-list {
+        margin-bottom: 20px;
+    }
+
+    .what-to-expect-1-wrapper .what-to-expect-btn a {
+        letter-spacing: 0.050em;
+    }
+
+    .what-to-expect-1-wrapper ul li {
+        line-height: 2.38;
+    }
+
+    .what-to-expect-1-wrapper ul li i {
+        padding-top: 12px;
+        margin-right: 20px;
+    }
+    .service-video iframe {
+    width: 100%;
+    height: 260px;
+}
+
+}
+
+@media (min-width: 1200px) {
+    .what-to-expect-1-wrapper ul li i {
+        padding-top: 17px;
+    }
+
+    .what-to-expect-1-wrapper ul li {
+        line-height: 3;
+    }
+    .service-video iframe {
+    width: 560px;
+    height: 315px;
+}
+}
+
+@media (min-width: 1500px) {
+    .what-to-expect-1-wrapper ul li i {
+        margin-right: 30px;
+    }
+}

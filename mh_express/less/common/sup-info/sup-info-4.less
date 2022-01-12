@@ -1,0 +1,147 @@
+/*------------------------------------*\
+  #SUP INFO 4
+\*------------------------------------*/
+.sup-info-4-wrapper {
+    margin-top: 5px;
+    position: relative;
+    z-index: 18;
+}
+
+.sup-info-4-wrapper .sup-info-4 {
+    padding: 60px 0;
+    position: relative;
+}
+
+.sup-info-4-wrapper [class*='col-'] {
+    margin-bottom: 30px;
+}
+
+.sup-info-4-wrapper [class*='col-']:last-of-type {
+    margin-bottom: 0;
+}
+
+.sup-info-4-wrapper .sup-info-4-copy {
+    background-color: rgba(201, 201, 201, 0.5);
+    padding: 45px 20px;
+    position: relative;
+}
+.sup-info-4-wrapper .sup-info-4-copy span{
+    display: block;
+    color: @color-black;
+}
+
+.sup-info-4-wrapper .sup-info-4-copy-line-1 {
+    color: @color-black;
+    display: block;
+    font-family: @font-family-secondary;
+    font-size: @font-size-33;
+    font-weight: @font-weight-700;
+    letter-spacing: 0;
+    line-height: 1;
+    margin-bottom: 5px;
+    text-transform: @text-transform-none;
+}
+.sup-info-4-wrapper .sup-info-4-phone {
+    font-size: @font-size-21;
+    font-family: @font-family-primary;
+    font-weight: @font-weight-700;
+    line-height: 1.47;
+    padding-bottom: 15px;
+}
+.sup-info-4-wrapper .sup-info-4-address {
+    font-family: @font-family-primary;
+    font-size: @font-size-21;
+    font-weight: @font-weight-400;
+    line-height: 1.83;
+}
+
+.sup-info-4-wrapper .sup-info-4-link {
+    display: block;
+    font-family: @font-family-primary;
+    font-size: @font-size-21;
+    font-weight: @font-weight-400;
+    line-height: 2;
+    text-transform: @text-transform-none;
+}
+
+.sup-info-4-wrapper .sup-info-4-link a {
+    color: @color-black;
+    display: inline-block;
+    text-decoration: none;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 100% 0.05em;
+    margin-bottom: 25px;
+}
+
+.sup-info-4-wrapper .sup-info-4-link a:active,
+.sup-info-4-wrapper .sup-info-4-link a:focus,
+.sup-info-4-wrapper .sup-info-4-link a:hover {
+    color: fade(@color-black, 50%);
+    background-image: none;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.sup-info-4-wrapper .sup-info-4-social {
+    position: relative;
+}
+.sup-info-4-wrapper .sup-info-4-hours {
+    color: @color-black;
+}
+.sup-info-4-wrapper .sup-info-4-hours span {
+    display: block; 
+    font-size: @font-size-21;
+    font-weight: @font-weight-400;   
+    line-height: 1.44;
+    padding-bottom: 7px;
+}
+
+
+/*------------------------------------*\
+  #PAGE SPECIFIC STYLES
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  #MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {
+     .sup-info-4-wrapper .sup-info-4-copy {
+        min-height: 384px;
+    }
+    .sup-info-4-wrapper [class*='col-'] {
+        margin-bottom: 0;
+    }
+    .sup-info-4-wrapper .sup-info-4-address{
+    }
+    .sup-info-4-wrapper .sup-info-4-copy-line-1{
+        margin-bottom: 20px;
+    }
+
+    
+}
+
+@media (min-width: 992px) {
+
+    .sup-info-4-wrapper .sup-info-4-copy-line-1 {
+        margin-bottom: 25px;
+    }
+    
+   .sup-info-4-wrapper .sup-info-4-copy {
+        min-height: 415px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sup-info-4-wrapper .sup-info-4-copy {
+        min-height: 380px;
+    }
+    .sup-info-4-wrapper .sup-info-4-copy-line-1 {
+        margin-bottom: 45px;
+    }
+    .sup-info-4-wrapper .sup-info-4 {
+        padding: 65px 0;
+    }
+    
+}

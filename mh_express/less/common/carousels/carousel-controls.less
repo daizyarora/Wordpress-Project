@@ -1,0 +1,141 @@
+/*------------------------------------*\
+  #CAROUSEL CONTROLS
+\*------------------------------------*/
+.carousel-controls-wrapper {
+	bottom: 0;
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 105;
+}
+
+	.carousel-controls-wrapper .carousel-controls {
+		align-items: flex-end;
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		position: relative;
+		width: 100%;
+		z-index: 105;
+	}
+
+		.carousel-controls-wrapper .carousel-controls .carousel-controls-background {
+			padding: 5px 0;
+			width: 100%;
+		}
+
+			.carousel-controls-wrapper .carousel-controls-dark .carousel-controls-background {
+				background: rgba(32, 45, 48, 1);
+			}
+
+			.carousel-controls-wrapper .carousel-controls-light .carousel-controls-background {
+				background: rgba(230, 230, 230, 1.0);
+			}
+
+				.carousel-controls-wrapper .carousel-controls-outer {
+					margin: 0 auto;
+					padding: 0 15px;
+					text-align: right;
+					width: 100%;
+				}
+
+					.carousel-controls-wrapper .carousel-controls-inner {
+						align-items: center;
+						display: inline-flex;
+						justify-content: center;
+						position: relative;
+					}
+
+						.carousel-controls-wrapper .carousel-control {
+							background-color: transparent;
+							border: none;
+							bottom: auto;
+							display: block;
+							font-size: 1.25em;
+							height: 100%;
+							left: auto;
+							line-height: 1;
+							opacity: 1;
+							padding: 0;
+							pointer-events: auto;
+							position: relative;
+							text-shadow: none;
+							top: 0;
+							transition-duration: 0.5s;
+							width: auto;
+						}
+
+						.carousel-controls-wrapper .carousel-controls-dark .carousel-control {
+							color: rgba(255, 255, 255, 0.85);
+						}
+
+						.carousel-controls-wrapper .carousel-controls-dark .carousel-control:active,
+						.carousel-controls-wrapper .carousel-controls-dark .carousel-control:focus,
+						.carousel-controls-wrapper .carousel-controls-dark .carousel-control:hover {
+							color: rgba(255, 255, 255, 0.75);
+						}
+
+						.carousel-controls-wrapper .carousel-controls-light .carousel-control {
+							color: rgba(22, 22, 22, 1.0);
+						}
+
+						.carousel-controls-wrapper .carousel-controls-light .carousel-control:active,
+						.carousel-controls-wrapper .carousel-controls-light .carousel-control:focus,
+						.carousel-controls-wrapper .carousel-controls-light .carousel-control:hover {
+							color: rgba(22, 22, 22, 0.5);
+						}
+
+							.carousel-controls-wrapper .carousel-control.left,
+							.carousel-controls-wrapper .carousel-control.right {
+								background-image: none;
+								background-repeat: no-repeat;
+							}
+
+							.carousel-controls-wrapper .carousel-control.left {
+								margin-right: 25px;
+							}
+
+							.carousel-controls-wrapper .carousel-control.right {
+								margin-left: 25px;
+							}
+
+							.carousel-controls-wrapper .carousel-control.center {
+							}
+
+							.carousel-controls-wrapper .carousel-pause {
+								font-size: 1.4em;
+							}
+
+							.carousel-controls-wrapper .carousel-resume {
+								display: none;
+								font-size: 1.4em;
+							}
+
+
+/*------------------------------------*\
+  #PAGE-SPECIFIC STYLES
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  #MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {
+	.carousel-controls-wrapper .carousel-controls-outer {
+		width: 720px;
+	}
+}
+
+@media (min-width: 992px) {
+	.carousel-controls-wrapper .carousel-controls-outer {
+		width: 970px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.carousel-controls-wrapper .carousel-controls-outer {
+		width: 1170px;
+	}
+}

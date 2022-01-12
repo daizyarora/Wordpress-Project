@@ -1,0 +1,50 @@
+/*------------------------------------*\
+  #SOCIAL MEDIA 1
+\*------------------------------------*/
+.social-media-1 {
+	display: inline-block;
+	font-size: @font-size-25;
+}
+
+	.social-media-1 a {
+		background: transparent;
+		color: fade(@color-black, 80%);
+		display: inline-block;
+		height: 1.82em;
+		line-height: 1.82em;
+		margin-right: 10px;
+		text-align: center;
+		transition-duration: @transition-duration;
+		width: 1.82em;
+	}	
+
+		.social-media-1 a:last-of-type {
+			margin-right: 0;
+		}	
+	
+	.social-media-1 a:active,
+	.social-media-1 a:focus,
+	.social-media-1 a:hover {
+		color: fade(@color-social-media-icon, 50%);
+	}
+
+/*------------------------------------*\
+  #PAGE SPECIFIC STYLES
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  #MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {
+	.social-media-1 {
+		display: block;
+		text-align: right;
+	}
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}

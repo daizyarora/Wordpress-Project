@@ -1,0 +1,145 @@
+/*------------------------------------*\
+#MODULE
+\*------------------------------------*/
+.callouts-6-wrapper {
+    margin-top: 3px;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 18;
+}
+
+.callouts-6-wrapper .callouts-6 {
+    background-image: url('/wp-content/themes/mh_express/design/callouts/callouts-6/bg.jpg');
+    background-color: @color-white;
+    background-size: cover;
+    background-position: 100%;
+}
+
+.callouts-6-wrapper .callouts-1-title-container span {
+    display: block;
+}
+
+.callouts-6-wrapper .callouts-1-title-inner {
+    display: inline-block;
+}
+
+.callouts-6-wrapper .callout-title-1 {
+    color: @color-black;
+    font-family: @font-family-primary;
+    font-weight: @font-weight-700;
+    font-size: clamp(@font-size-36, 4.359vw, @font-size-51);
+    letter-spacing: 0;
+    line-height: 1.09em;
+    text-transform: @text-transform-uppercase;
+    padding-bottom: 5px;
+}
+
+.callouts-6-wrapper .callout-title-2 {
+    color: @color-black;
+    font-family: @font-family-secondary;
+    font-weight: @font-weight-400;
+    font-size: clamp(@font-size-36, 4.359vw, @font-size-51);
+    font-style: italic;
+    letter-spacing: 0;
+    line-height: 1.09em;
+    text-transform: @text-transform-none;
+    padding-bottom: 5px;
+}
+
+.callouts-6-wrapper .callouts-1-title-container {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.callouts-6-wrapper .callouts-6-item-button {
+    display: block;
+    font-family: @font-family-secondary;
+    font-size: @font-size-17;
+    font-weight: @font-weight-700;
+}
+
+.callouts-6-wrapper .callouts-6-item-inner {
+    margin-bottom: 0px;
+}
+
+.callouts-6-wrapper .callouts-6-item-button a {
+    color: @color-white;
+    display: inline-flex;
+    background-color: @color-primary;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    min-height: 46px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 35px;
+}
+
+.callouts-6-wrapper .callouts-6-item-button a:hover,
+.callouts-6-wrapper .callouts-6-item-button a:active,
+.callouts-6-wrapper .callouts-6-item-button a:focus {
+    color: fade(@color-white, 60%);
+}
+
+/*------------------------------------*\
+#PAGE SPECIFIC STYLES
+\*------------------------------------*/
+/*------------------------------------*\
+#MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {
+     .callouts-6-wrapper .callouts-6 {
+        padding-top: 150px;
+    }
+    .callouts-6-wrapper .callouts-1-title-container {
+        justify-content: flex-start;
+        margin-bottom: 90px;
+        padding-right: 20px;
+    }
+    .callouts-6-wrapper .callouts-6-item-inner{
+        display: inline-block;
+    }
+}
+
+@media (min-width: 992px) {
+    .callouts-6-wrapper:after {
+        width: 300px;
+        height: 304px;
+    }
+
+    .callouts-6-wrapper .callouts-1-title-container {
+        margin-bottom: 120px;
+        padding-right: 14px;
+    }
+
+    .callouts-6-wrapper .callouts-6 {
+        padding-top: 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .callouts-6-wrapper:after {
+        width: 350px;
+        height: 354px;
+    }
+
+    .callouts-6-wrapper .callouts-6 {
+        padding-top: 210px;
+    }
+
+    .callouts-6-wrapper .callouts-1-title-container {
+        margin-bottom: 165px;
+        padding-right: 12px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .callouts-6-wrapper .callouts-6 {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (min-width: 1500px) {
+    
+}

@@ -1,0 +1,133 @@
+/*------------------------------------*\
+  #REUSABLE-BLOCKS
+\*------------------------------------*/
+/*!
+** Button Dark
+*/
+.mh-btn-dark a {
+	background: @color-primary;
+}
+
+.mh-btn-dark a:active,
+.mh-btn-dark a:focus,
+.mh-btn-dark a:hover {
+	background: lighten(@color-primary, 10%);
+	text-decoration: none;
+}
+
+/*!
+** Button Light
+*/
+.mh-btn-light a:active,
+.mh-btn-light a:focus,
+.mh-btn-light a:hover {
+	opacity: 0.5;
+	text-decoration: none;
+}
+
+/*!
+** Content Feature Layout
+*/
+.content-feature-layout {
+	background: rgba(51, 64, 73, 0.02);
+	border-top: 1px solid rgba(51, 64, 73, 0.3);
+	border-bottom: 1px solid rgba(51, 64, 73, 0.3);
+	padding: 5% 5% 1% 5%;
+}
+
+	.content-feature-layout h2, 
+	.content-feature-layout h3, 
+	.content-feature-layout h4 {
+		margin-top: .5em;
+	}
+
+/*!
+** Coupons
+*/
+.coupons {
+	padding-bottom: 1em;
+}
+	
+	.coupons h2.panel-title {
+		padding: 0.5em;
+	}
+
+	.coupons ul {
+		margin-top: 1em;
+	}
+
+		.coupons ul li {
+			margin-bottom: 0.5em;
+			margin-left: 0;
+			max-width: none;
+		}
+
+		.coupons ul li:last-of-type {
+			font-size: 0.85em;
+		}
+
+	.coupons .btn {
+		border-radius: 0;
+		font-size: 0.9em;
+		font-weight: inherit;
+		text-transform: none;
+	}
+
+/*!
+** Team Page, Landing Page - Link to Bios
+*/
+.team .title {
+	font-size: 0.9em;
+	text-align: center;
+}
+
+	.team .title a {
+		display: inline-block;
+		text-decoration: none;
+	}
+
+		.team .title .name {
+			display: inline-block;
+			font-size: 1.2em;
+			font-weight: 700;
+			line-height: 1;
+			padding-bottom: .5em;
+		}
+
+/*!
+** Team Page, Static Style - Images & Titles Only
+*/
+.team .title h2,
+.team .title h3,
+.team .title h4   {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+  margin-top: 0.7em;
+}
+
+/*!
+** Team Page, Static Style - Bio & Image
+*/
+.team-card {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	padding: 2em;
+}
+
+
+/*------------------------------------*\
+  #PAGE SPECIFIC STYLES
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  #MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}

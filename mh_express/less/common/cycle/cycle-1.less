@@ -1,0 +1,100 @@
+/*------------------------------------*\
+#CYCLE-1
+\*------------------------------------*/
+.cycle-1-wrapper {
+    position: relative;
+}
+
+.cycle-1-wrapper .banner {
+    background: url('/wp-content/themes/mh_express/design/cycle/1.jpg') no-repeat;
+    background-color: @color-white;
+    background-size: cover;
+    height: 300px;
+    position: absolute;
+    top: 207px;
+    width: 100%;
+    z-index: 1;
+    background-position: 100% 50%;
+}
+
+.cycle-1-wrapper .cycle-slideshow {
+    backface-visibility: hidden;
+    /* added to fix firefox wiggle bug */
+    box-shadow: rgba(0, 0, 0, 0.01) 0.01em 0.01em 0.01em;
+    /* added to fix firefox wiggle bug */
+    position: relative;
+}
+
+.cycle-1-wrapper .cycle-slideshow img {
+    backface-visibility: hidden;
+    /* added to fix firefox wiggle bug */
+    box-shadow: rgba(0, 0, 0, 0.01) 0.01em 0.01em 0.01em;
+    /* added to fix firefox wiggle bug */
+    position: relative;
+}
+
+.cycle-1-wrapper .banner-slideshow {
+    background: transparent;
+    height: 0;
+    /* setting only applies to mobile see media queries */
+    position: relative;
+    width: 100%;
+}
+
+/*------------------------------------*\
+#PAGE-SPECIFIC STYLES
+\*------------------------------------*/
+/*------------------------------------*\
+#MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {
+    .cycle-1-wrapper .banner {
+        background: transparent;
+        background-color: @color-white;
+        height: 600px;
+        padding-left: 0;
+        padding-right: 0;
+        top: 161px;
+        /*-webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);*/
+    }
+
+    .cycle-1-wrapper .banner-slideshow {
+        height: 600px;
+    }
+
+    .cycle-1-wrapper .banner-slide-1 {
+        background: url('/wp-content/themes/mh_express/design/cycle/1.jpg') 44% 0 no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 992px) {
+    .cycle-1-wrapper .banner {
+        height: 830px;
+    }
+
+    .cycle-1-wrapper .banner-slideshow {
+        height: 830px;
+    }
+
+    .cycle-1-wrapper .banner {
+        top: 161px;
+    }
+
+    .cycle-1-wrapper .banner-slide-1 {
+        background: url('/wp-content/themes/mh_express/design/cycle/1.jpg') 50% 0 no-repeat;
+        background-size: cover;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .cycle-1-wrapper .banner {
+        top: 157px;
+    }
+}
+
+@media (min-width: 1366px) {
+    
+}

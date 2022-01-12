@@ -1,0 +1,154 @@
+
+.radio-btn .buttons {
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+}
+.radio-btn .radios {
+  height: 100%;
+  width: 100%;
+  margin-top: 0 auto;
+  background-color: none;
+}
+.radio-btn input[type=radio] {
+  opacity: 0;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  left: 0;
+  z-index: 7;
+}
+.radio-btn input[type=radio]:checked + label .circle:before {
+  background: #0078a3;
+    width: 12px;
+    height: 12px;
+}
+.radio-btn input[type=radio]:checked:hover + label .circle:before {
+    background: #0078a3;
+    width: 12px;
+    height: 12px;
+}
+.radio-btn input[type=radio]:checked ~ .panel {
+  background: #0078a3;
+  width: 100%;
+  left: 20%;
+  margin-left: 20px;
+}
+@media (max-width: 640px) {
+  .radio-btn input[type=radio]:checked ~ .panel {
+    left: 0%;
+  }
+}
+.radio-btn input[type=radio]:checked ~ .panel .inner-text {
+  width: 80%;
+}
+.radio-btn input[type=radio]:hover + label .circle {
+  border-color: #0078a3;
+}
+.radio-btn input[type=radio] ~ .panel {
+  float: left;
+  clear: both;
+  display: block;
+  position: absolute;
+  left: 500%;
+  height: 100%;
+  width: 0%;
+  overflow: hidden;
+  z-index: 9;
+  background: transparent;
+}
+@media (max-width: 640px) {
+  .radio-btn input[type=radio] ~ .panel {
+    top: 58%;
+  }
+}
+.radio-btn input[type=radio] ~ .panel .inner-text {
+  float: left;
+  color: white;
+  display: block;
+  background: #0078a3;
+  width: 0%;
+  z-index: 10;
+  overflow: hidden;
+  margin-left: 2%;
+  margin-top: 2%;
+  font-family: "Open Sans";
+  font-size: 1em;
+}
+.radio-btn input[type=radio] + label {
+  display: flex;
+  align-items: center;
+}
+.radio-btn .steps {
+  display: flex;
+  align-items: center;
+}
+.radio-btn .steps p {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.radio-btn input[type=radio] + label .text {
+  display: inline;
+  color: #314547;
+  font-family: "Open Sans";
+  font-size: 25px;
+}
+
+.radio-btn .circle {
+  transition: border-color 0.25s linear;
+  -webkit-transition: border-color 0.25s linear;
+  -moz-transition: border-color 0.25s linear;
+  -o-transition: border-color 0.25s linear;
+  -ms--transition: border-color 0.25s linear;
+  content: "";
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  background-color: #9ff6fd;
+  border-radius: 50%;
+  border-color: #0078a3;
+  border-style: solid;
+  border-width: 5px;
+}
+.radio-btn .circle:before {
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+  -moz-transition: background 0.25s linear;
+  -o-transition: background 0.25s linear;
+  -ms--transition: background 0.25s linear;
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 20px;
+  width: 20px;
+  content: "";
+  background: transparent;
+  border-radius: 50%;
+}
+
+.radio-btn #bio1 {
+  top: 0px;
+}
+.radio-btn #bio1 + label {
+  top: 0px;
+}
+
+.radio-btn #contact1 {
+  top: 50px;
+}
+.radio-btn #contact1 + label {
+  top: 50px;
+}
+
+.radio-btn #work1 {
+  top: 100px;
+}
+.radio-btn #work1 + label {
+  top: 100px;
+}

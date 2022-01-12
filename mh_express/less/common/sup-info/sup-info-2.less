@@ -1,0 +1,130 @@
+/*------------------------------------*\
+#SUP INFO 2
+\*------------------------------------*/
+.sup-info-2-wrapper {
+    position: relative;
+    z-index: 18;
+}
+
+.sup-info-2-wrapper .sup-info-2 {
+    background-image: url(/wp-content/themes/mh_express/design/sup-info/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    ;
+    background-color: @color-white;
+    padding: 60px 0;
+    position: relative;
+}
+
+.sup-info-2-wrapper .sup-info-2-copy {
+    background-color: fade(@color-white, 80%);
+    padding: 45px 0px;
+    position: relative;
+}
+
+.sup-info-2-wrapper .sup-info-2-copy span {
+    display: block;
+    color: @color-black;
+}
+
+.sup-info-2-wrapper .sup-info-2-copy-line-1 {
+    color: @color-sup-info-2-copy-line-1;
+    display: block;
+    font-family: @font-family-sup-info-2-copy-line-1;
+    font-size: @font-size-sup-info-2-copy-line-1;
+    font-weight: @font-weight-sup-info-2-copy-line-1;
+    letter-spacing: 0;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-transform: @text-transform-sup-info-2-copy-line-1;
+}
+
+.sup-info-2-wrapper .sup-info-2-link {
+    display: block;
+    font-family: @font-family-sup-info-2-link;
+    font-size: @font-size-sup-info-2-link;
+    font-weight: @font-weight-sup-info-2-link;
+    line-height: 2;
+    text-transform: @text-transform-sup-info-2-link;
+}
+
+.sup-info-2-wrapper .sup-info-2-link a {
+    color: @color-sup-info-2-link;
+    display: inline-block;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 100% 0.05em;
+    margin: 15px 0px 10px 0;
+    text-decoration: underline;
+}
+
+.sup-info-2-wrapper .sup-info-2-link a:active,
+.sup-info-2-wrapper .sup-info-2-link a:focus,
+.sup-info-2-wrapper .sup-info-2-link a:hover {
+    color: @color-sup-info-2-link-transition;
+    background-image: none;
+    text-shadow: none;
+}
+
+.sup-info-2-wrapper .sup-info-2-copy-text {
+    color: @color-black;
+    font-size: @font-size-21;
+    font-family: @font-family-primary;
+    font-weight: @font-weight-400;
+    letter-spacing: 0;
+    line-height: 1.57;
+}
+
+.sup-info-2-wrapper .bold {
+    font-weight: @font-weight-700;
+    padding-bottom: 15px;
+}
+
+.sup-info-2-wrapper .sup-info-2-content-button {
+    display: block;
+    padding-top: 30px;
+}
+
+.sup-info-2-wrapper .sup-info-2-content-button a {
+    background: @color-white;
+    color: @color-black;
+    min-height: 46px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+    font-size: @font-size-17;
+    -webkit-box-shadow: 0 8px 10px 0 fade(@color-black, 30%);
+    box-shadow: 0 8px 10px 0 fade(@color-black, 30%);
+    text-decoration: none;
+}
+
+.sup-info-2-wrapper .sup-info-2-content-button a:hover,
+.sup-info-2-wrapper .sup-info-2-content-button a:active,
+.sup-info-2-wrapper .sup-info-2-content-button a:focus {
+    opacity: 0.6;
+}
+
+/*------------------------------------*\
+#PAGE SPECIFIC STYLES
+\*------------------------------------*/
+/*------------------------------------*\
+#MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {
+    .sup-info-2-wrapper .sup-info-2-content-button a {
+        letter-spacing: 0.050em;
+    }
+}
+
+@media (min-width: 992px) {
+    .sup-info-2-wrapper .sup-info-2-copy-line-1 {
+        margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sup-info-2-wrapper .sup-info-2-copy-line-1 {
+        margin-bottom: 35px;
+    }
+}

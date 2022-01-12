@@ -1,0 +1,172 @@
+/*------------------------------------*\
+#BANNER-CONTENT
+\*------------------------------------*/
+.banner-content-wrapper {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.banner-content-wrapper .banner-content {
+    align-items: center;
+    background: transparent;
+    display: flex;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.banner-content-wrapper .banner-copy {
+    background: transparent;
+    padding: 30px 0px 30px 0px;
+    position: relative;
+}
+
+.banner-content-wrapper .banner-copy-text {
+    color: @color-black;
+    display: block;
+    font-family:  @font-family-primary;
+    font-size: clamp(@font-size-26, 3.504vw, @font-size-41);
+    font-weight: @font-weight-400;
+    letter-spacing: 0;
+    line-height: 1.09;
+    margin-bottom: 15px;
+    text-transform: @text-transform-none;
+}
+
+.banner-content-wrapper .banner-sub-copy-text {
+    color: @color-black;
+    display: block;
+    font-family: @font-family-primary;
+    font-size: clamp(@font-size-17, 1.795vw, @font-size-21);
+    font-weight: @font-weight-400;
+    letter-spacing: 0.050em;
+    line-height: 1.57;
+    margin-bottom: 15px;
+    text-transform: @text-transform-none;
+}
+
+.banner-content-wrapper .banner-copy-button {
+    display: block;
+    font-family: @font-family-primary;
+    font-size: @font-size-17;
+    font-weight: @font-weight-400;
+    line-height: 1;
+    letter-spacing: 0.050em;
+    text-transform: @text-transform-none;
+}
+
+.banner-content-wrapper .banner-copy-button a {
+    background: @color-primary;
+    color: @color-white;
+    display: inline-flex;
+    padding: 0px 20px;
+    text-decoration: none;
+    min-height: 46px;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content-wrapper .banner-copy-button a:active,
+.banner-content-wrapper .banner-copy-button a:focus,
+.banner-content-wrapper .banner-copy-button a:hover {
+    background: fade(@color-primary, 90%);
+    color: fade(@color-white, 50%);
+}
+
+.banner-content-wrapper .banner-link {
+    display: inline-block;
+    margin-left: auto;
+    position: relative;
+}
+
+.banner-content-wrapper .banner-link img {
+    width: 193px;
+    transition-duration: 0.5s;
+}
+
+.banner-content-wrapper .banner-link:active img,
+.banner-content-wrapper .banner-link:focus img,
+.banner-content-wrapper .banner-link:hover img {
+    opacity: 0.6;
+}
+
+/*------------------------------------*\
+#PAGE SPECIFIC STYLES
+\*------------------------------------*/
+.banner-content-container-xs .banner-content-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.banner-content-wrapper ul {
+    margin-bottom: 20px;
+}
+
+/*------------------------------------*\
+#MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {
+    .banner-content-container-xs {
+        display: none;
+    }
+
+    .banner-content-wrapper .banner-copy {
+        max-width: 370px;
+        background: transparent;
+        padding-bottom: 50px;
+        position: relative;
+        min-height: 600px;
+        display: flex;
+align-items: center;
+    }
+
+    .banner-content-wrapper .banner-copy-button {
+        letter-spacing: 0.100em;
+    }
+   .banner-content-wrapper .banner-copy-image {
+    display: flex;
+    justify-content: center;
+    padding-left: 90px;
+}
+}
+
+@media (min-width: 992px) {
+    .callouts-1-wrapper .callout-1-content {
+        height: auto;
+    }
+
+    .banner-content-wrapper .banner-copy {
+        max-width: 440px;
+        min-height: 830px;
+    }
+    .banner-content-wrapper .banner-sub-copy-text{
+        max-width: 355px;
+    }
+    .banner-content-wrapper .banner-copy-image {
+    display: flex;
+    justify-content: center;
+    padding-left: 230px;
+}
+
+}
+
+@media (min-width: 1200px) {
+    .banner-content-wrapper .banner-copy {
+        max-width: 515px;
+    }
+     .banner-content-wrapper .banner-sub-copy-text{
+        max-width: 400px;
+    }
+
+}
+
+@media (min-width: 1366px) {
+    
+    .banner-content-wrapper .banner-copy-image {
+        margin-top: 95px;
+    }
+}
