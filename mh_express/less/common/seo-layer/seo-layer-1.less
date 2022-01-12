@@ -1,0 +1,67 @@
+/*------------------------------------*\
+#Intro-1
+\*------------------------------------*/
+.home .content1 {
+    background: @color-white;
+    margin: 0;
+    padding: 40px 0;
+}
+
+.home .content1 [class*=col] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .content1 h1 {
+     color: @color-black;
+    display: block;
+    font-size: clamp(@font-size-26, 2.821vw, @font-size-33);
+    font-family: @font-family-primary;
+    font-weight: @font-weight-400;
+    letter-spacing: 0;
+    line-height: 1.33em;
+    max-width: 100%;
+    text-transform: @text-transform-none;
+    padding-bottom: 5px;
+}
+
+
+
+.home .content1 p {
+    color: @color-black;
+    font-size: @font-size-21;
+    line-height: 1.57;
+    letter-spacing: 0.050em;
+    margin-bottom: 0;
+    padding-bottom: 0px;
+    margin: 0 auto
+}
+@media (min-width: 768px) {
+    .home .content1 {
+        padding: 60px 0;
+    }
+    .home .content1 h1{
+        margin-bottom: 5px;
+    }
+    .home .content1 p {
+        max-width: 72%;
+    }
+
+    .home .content h1 br.br-xs {
+        display: none;
+    }
+
+}
+@media (min-width: 1200px) {
+
+    .home .content1 {
+        padding: 70px 0px;
+    }
+
+
+    .home .content1 p {
+        max-width: 650px;
+    }
+}

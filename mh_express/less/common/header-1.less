@@ -1,0 +1,295 @@
+/*------------------------------------*\
+#HEADER-1
+\*------------------------------------*/
+.header-wrapper {
+    margin-top: 46px;
+    position: relative;
+    z-index: 20;
+    -webkit-box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+    max-width: 1920px;
+    
+
+}
+
+.header-wrapper.fixed-header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	animation-name: header_animation;
+	animation-duration: 0.5s;
+}
+
+.header-wrapper.fixed-header .header-company-logo,
+.header-wrapper.fixed-header .header-usp-container,
+.header-wrapper.fixed-header .header-contact,
+.header-wrapper.fixed-header .header-1 
+{
+	transition: all 0.5s;
+}
+
+.header-wrapper .header-company-logo,
+.header-wrapper .header-usp-container,
+.header-wrapper .header-contact, 
+.header-wrapper .header-1 {
+	transition: all 0.5s;
+}
+
+
+.header-wrapper.fixed-header .header-company-logo,
+.header-wrapper.fixed-header .header-usp-container,
+.header-wrapper.fixed-header .header-contact {
+	transform: scale(0.9);
+	margin-top: -5px;
+}
+.header-wrapper.fixed-header .header-1{
+	padding-bottom: 7px;
+}
+
+
+@keyframes header_animation{
+	from {
+		top: -100px;
+
+	}
+	to {
+		top: 0px;
+	}
+}
+
+.header-1 {
+    background: @color-white;
+    border-bottom: 1px solid fade(@color-black, 20%);
+    padding: 10px 0 10px 0;
+    position: relative;
+    z-index: 19;
+}
+
+.header-1 .header-company-logo {
+    position: relative;
+}
+
+.header-1 .header-logo-link {
+    display: block;
+    position: relative;
+}
+
+.header-1 .header-contact {
+    text-align: right;
+}
+
+.header-1 .header-request-btn {
+    display: block;
+    font-family: @font-family-primary;
+    font-size: @font-size-17;
+    font-weight: @font-weight-700;
+    line-height: 1.49;
+    letter-spacing: 0.1em;
+    margin-bottom: 15px;
+    text-transform: @text-transform-none;
+}
+
+.header-1 .header-request-btn a {
+    align-items: center;
+    background: @color-primary;
+    color: @color-black;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 0px 15px;
+    box-shadow: 0 8px 10px 0 fade(@color-black, 30%);
+    min-height: 46px;
+
+}
+
+.header-1 .header-request-btn.non-primary a {
+    background: @color-secondary;
+}
+
+.header-1 .header-request-btn a:active,
+.header-1 .header-request-btn a:focus,
+.header-1 .header-request-btn a:hover {
+    color: fade(@color-black, 50%);
+}
+
+.header-1 .header-phone {
+    display: block;
+    font-family: @font-family-primary;
+    font-size: @font-size-21;
+    font-weight: @font-weight-700;
+    line-height: 1.49;
+    letter-spacing: 0.050em;
+    text-transform: @text-transform-uppercase;
+}
+
+.header-1 .header-phone a {
+    color: @color-black;
+    display: inline-flex;
+    min-height: 46px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header-1 .header-phone a:active,
+.header-1 .header-phone a:focus,
+.header-1 .header-phone a:hover {
+    color: fade(@color-black, 50%);
+}
+
+/*------------------------------------*\
+#PAGE SPECIFIC STYLES
+\*------------------------------------*/
+/*------------------------------------*\
+#MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {
+    .header-wrapper {
+        margin-top: 0px;
+    }
+    .header-wrapper:after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        background: fade(@color-black, 20%);
+        bottom: -10px;
+        left: 0px;
+    }
+
+    .header-1 .row {
+        align-items: center;
+        display: flex;
+    }
+
+    .header-1 .header-usp-container {
+        text-align: right;
+    }
+
+    .header-1 .header-usp {
+        font-size: @font-size-17;
+        font-weight: @font-weight-700;
+        line-height: 1.47;
+        letter-spacing: 0.050em;
+        display: block;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+
+    /**
+* Values in this section will change depending on size of logo*/
+    /**/
+    .header-1 .row {
+        align-items: center;
+    }
+
+    .header-1 .header-company-logo {
+        position: relative;
+    }
+
+    /**/
+    .header-1 .header-request-btn,
+    .header-1 .header-phone {
+        display: inline-block;
+    }
+
+    .header-1 .header-request-btn {
+        margin-bottom: 10px;
+    }
+
+    .header-1 .header-usp-container {
+        text-align: center;
+    }
+
+    .header-1 .header-link {
+        display: block;
+        font-size: @font-size-17;
+        font-family: @font-family-primary;
+        font-weight: @font-weight-700;
+        letter-spacing: 0.050em;
+    }
+
+    .header-1 .header-link a {
+        text-decoration: none;
+        color: @color-primary;
+
+    }
+
+    .header-1 .header-link a:hover,
+    .header-1 .header-link a:active,
+    .header-1 .header-link a:focus {
+        color: fade(@color-primary, 70%);
+    }
+
+    .header-1 .header-phone {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .header-1 .container-fluid,
+    .header-1 .row,
+    .header-1 [class*=col] {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-1 .container-fluid {
+        padding: 0px 15px;
+    }
+
+    .home .header-wrapper {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .header-1 {
+        padding-bottom: 5px;
+        border-bottom: none;
+    }
+
+    .header-1 .header-usp {
+
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1366px) {
+	.page-id-2443 .header-wrapper{
+		position: fixed;
+		width: 100%;
+		top: 0px;
+		animation-name: header_animation;
+		animation-duration: 0.5s;
+        margin: 0 auto;
+
+
+	}
+   
+    .header-1 .row {
+        display: block;
+    }
+
+    .header-1 .container-fluid {
+        padding: 0px 50px;
+    }
+
+    .header-1 .header-usp {
+        max-width: 100%;
+    }
+
+    .header-1 .header-company-logo {
+        padding-top: 5px;
+    }
+
+    .header-1 .header-request-btn {
+        margin-bottom: 12px;
+    }
+}

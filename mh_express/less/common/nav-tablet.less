@@ -1,0 +1,97 @@
+/*------------------------------------*\
+  #NAV TABLET
+\*------------------------------------*/
+/*!
+* Give dropdown-menu its "open" styles by default to make its expansion on mobile and tablet appear more fluid
+*/
+.navbar .dropdown-menu {
+	float: none;
+    position: static;
+    width: auto;
+}
+
+
+/*------------------------------------*\
+  #PAGE SPECIFIC STYLES
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  #MEDIA QUERIES
+\*------------------------------------*/                                  
+@media (min-width: 768px) {	
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+	/*!
+	* Override default Bootstrap rules/styles to accommodate navbar remaining as drop-down until 992px desktop view
+	*/
+	.navbar .container {
+		padding: 0;
+		width: 100%;
+	}
+	
+		.navbar .navbar-header {
+			float: none;
+		}
+	
+			.navbar > .container .navbar-brand, 
+			.navbar > .container-fluid .navbar-brand {
+				margin-left: 15px;
+			}
+	
+			.navbar .navbar-toggle {
+				display: block !important;
+			}
+
+			.navbar .navbar-collapse {
+				border-top: 1px solid rgba(0,0,0,0.2);
+				box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+			}
+
+			.navbar .navbar-collapse.collapse {
+				display: none!important;
+			}
+
+			.navbar .collapse.in {
+				display:block !important;
+			}
+
+				.navbar .navbar-nav {
+					float: none!important;
+					margin: 7.5px -15px;
+				}
+
+				.navbar .navbar-left,
+				.navbar .navbar-right {
+					float: none !important;
+				}
+
+					.navbar .navbar-nav>li {
+						float: none;
+					}
+
+						.navbar .dropdown-menu {
+							border: none;
+						}
+
+						.navbar .yamm-content [class*="col-"] {
+							width: 100%;
+						}
+}
+
+@media (min-width: 992px) {
+	
+}
+
+@media (min-width: 1200px) {
+	.navbar .navbar-collapse {
+				border-top: 1px solid transparent;
+				box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+			}
+.navbar .dropdown-menu {
+		float: left;
+		position: absolute;
+		width: unset;
+	}
+}

@@ -1,0 +1,107 @@
+/*------------------------------------*\
+  #GRAVITY FORMS (OVERRIDES DEFAULT PLUGIN STYLES)
+\*------------------------------------*/
+.page-template .gform_wrapper {
+	position: relative;
+}
+
+	.page-template .gform_wrapper form {
+		background: rgba(0,0,0,.01);
+		border: 1px solid #eee;
+		font-size: .9em;
+		margin: 2em 0 1em 0;
+		padding: 1em 2em;
+	}
+
+		.page-template .gform_wrapper .gform_heading {
+		}
+
+			.page-template .gform_wrapper h3.gform_title {
+			}
+
+			.page-template .gform_wrapper span.gform_description {
+				border-bottom: 1px solid rgba(229, 229, 229, 1);
+				font-size: 1.111em;
+			}
+
+		.page-template .gform_wrapper .gform_body {
+		}
+
+			.page-template main .gform_wrapper ul {
+				max-width: none;
+			}
+
+				.page-template .gform_wrapper .top_label .gfield_label {
+					font-size: 0.86em;
+					font-weight: normal;
+				}
+
+				.page-template .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label {
+					font-weight: @font-weight-400;
+				}
+
+				.page-template .gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
+					background-color: rgba(238, 238, 238, 1.0);
+					border: none;
+					font-size: @font-size-17;
+					padding: 10px;
+					width: 100%;
+				}
+
+				.page-template .gform_wrapper .gform_body .gform_fields .gfield select {
+					background-color: rgba(238, 238, 238, 1.0);
+					border: none;
+					font-size: @font-size-17;
+					padding: 8px;
+					width: 100%;
+				}
+
+				.page-template .gform_wrapper .gform_body .gform_fields .gfield textarea {
+					background-color: rgba(238, 238, 238, 1.0);
+					border: none;
+				}
+
+				.page-template .gform_wrapper .gfield_radio li label {
+					font-weight: normal;
+					margin: 2px 0 0 4px;
+				}
+
+		.page-template .gform_wrapper .gform_footer {
+		}
+
+			.page-template .gform_wrapper .gform_footer input[type=submit] {
+				background-color: @color-secondary;
+				border: none;
+				border-radius: 4px;
+				color: @color-white;
+				font-size: 0.9em;
+				padding: 6px 12px;
+				text-transform: @text-transform-uppercase;
+				transition-duration: 0.5s;
+			}
+	
+			.page-template .gform_wrapper .gform_footer input[type=submit]:active,
+			.page-template .gform_wrapper .gform_footer input[type=submit]:focus,
+			.page-template .gform_wrapper .gform_footer input[type=submit]:hover {
+				background-color: @color-primary;
+			}
+
+/*------------------------------------*\
+  #PAGE-SPECIFIC STYLES
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  #MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+	.page-template .gform_wrapper {
+		width: 75%;
+	}
+}

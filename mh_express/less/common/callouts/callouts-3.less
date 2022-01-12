@@ -1,0 +1,195 @@
+/*------------------------------------*\
+#MODULE
+\*------------------------------------*/
+.callouts-3-wrapper {
+    position: relative;
+    z-index: 18;
+}
+
+.callouts-3-wrapper .callouts-3 {
+    background-color: @color-white;
+    background-image: url('/wp-content/themes/mh_express/design/features/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.callouts-3-wrapper .callouts-3-intro-title-line-1 {
+    display: block;
+    color: @color-black;
+    font-family: @font-family-secondary;
+    font-size: clamp(@font-size-26, 4.359vw, @font-size-51);
+    font-weight: @font-weight-300;
+    letter-spacing: 0;
+    line-height: 1.09;
+    margin-bottom: 5px;
+    text-transform: @text-transform-none;
+}
+
+.callouts-3-wrapper .callouts-3-intro-title-line-2 {
+    display: block;
+    color: @color-primary;
+    font-family: @font-family-secondary;
+    font-size: clamp(@font-size-36, 4.359vw, @font-size-51);
+    font-weight: @font-weight-700;
+    letter-spacing: 0;
+    line-height: 1.09;
+    margin-bottom: 10px;
+    text-transform: @text-transform-none;
+}
+
+.callouts-3-wrapper .callouts-3-intro-copy {
+    color: @color-black;
+    display: block;
+    font-size: clamp(@font-size-17, 1.795vw, @font-size-21);
+    font-weight: @font-weight-400;
+    font-family: @font-family-primary;
+    line-height: 1.57;
+    letter-spacing: 0.050em;
+    margin-bottom: 0;
+    padding-bottom: 0px;
+}
+
+.callouts-3-wrapper .callouts-3-intro {
+    padding: 30px 0px;
+}
+
+.callouts-3-wrapper .callouts-3-inner {
+    background-image: url('/wp-content/themes/mh_express/design/callouts-3/bg.jpg');
+    background-color: @color-white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 15px 0px;
+}
+
+.callouts-3-wrapper .callout-3-content {
+    display: block;
+    margin-bottom: 80px;
+}
+
+.callouts-3-wrapper .callout-3-content:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: fade(@color-black, 20%);
+    bottom: -40px;
+    left: 0px;
+}
+
+.callouts-3-wrapper .col-sm-6:last-of-type .callout-3-content:last-of-type:after {
+    display: none;
+}
+
+.callouts-3-wrapper .col-sm-4:last-of-type .callout-3-content:last-of-type {
+    margin-bottom: 0px;
+}
+
+.callouts-3-wrapper .callout-3-title {
+    color: @color-black;
+    display: block;
+    font-family: @font-family-secondary;
+    font-weight: @font-weight-700;
+    font-size: clamp(@font-size-21, 2.222vw, @font-size-26);
+    line-height: 1.26;
+    letter-spacing: 0.025em;
+    padding-bottom: 10px;
+}
+
+.callouts-3-wrapper .callout-3-copy {
+    color: @color-black;
+    display: block;
+    font-family: @font-family-primary;
+    font-weight: @font-weight-400;
+    font-size: clamp(@font-size-19, 1.795vw, @font-size-21);
+    line-height: 1.58;
+    letter-spacing: 0.025em;
+    padding-bottom: 10px;
+}
+
+.callouts-3-wrapper .callout-3-btn {
+    display: block;
+    font-family: @font-family-primary;
+    font-weight: @font-weight-400;
+    font-size: @font-size-17;
+    line-height: 1.5;
+    letter-spacing: 0.100em;
+}
+
+.callouts-3-wrapper .callout-3-btn a {
+    align-items: center;
+    background: @color-secondary;
+    color: @color-white;
+    display: inline-flex;
+    justify-content: center;
+    min-height: 46px;
+    padding: 0px 15px;
+    text-decoration: none;
+}
+
+.callouts-3-wrapper .callout-3-btn a:hover,
+.callouts-3-wrapper .callout-3-btn a:active,
+.callouts-3-wrapper .callout-3-btn a:focus {
+    opacity: 0.5;
+}
+
+/*------------------------------------*\
+#PAGE SPECIFIC STYLES
+\*------------------------------------*/
+/*------------------------------------*\
+#MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {
+    .callouts-3-wrapper .callout-3-content:last-of-type:after {
+        display: none;
+    }
+
+    .callouts-3-wrapper .callout-3-content:after {
+        top: 42%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .callouts-3-wrapper .callouts-3 .row {
+        display: flex;
+    }
+
+    .callouts-3-wrapper .callouts-3-intro {
+        padding: 60px 0px 30px;
+    }
+
+    .callouts-3-wrapper .col-sm-4 {
+        background-image: url('/wp-content/themes/mh_express/design/why-people-trust/middle.jpg');
+        background-color: @color-black;
+        background-position: 50% 0%;
+        background-size: cover;
+        margin:0 25px;
+    }
+
+    .callouts-3-wrapper .callout-3-content:last-of-type {
+        margin-bottom: 0px;
+    }
+
+    .callouts-3-wrapper .callouts-3-inner {
+        padding: 15px 0px 50px;
+    }
+
+    .callouts-3-wrapper .callout-3-content:after {
+        top: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .callouts-3-wrapper .callouts-3-intro {
+        padding: 70px 0px 30px;
+    }
+     .callouts-3-wrapper .callouts-3-inner {
+        padding-bottom: 70px;
+     }
+}
+
+@media (min-width: 1366px) {}
+
+@media (min-width: 1500px) {}

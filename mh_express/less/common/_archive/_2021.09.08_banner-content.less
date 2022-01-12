@@ -1,0 +1,117 @@
+/*------------------------------------*\
+  #BANNER-CONTENT
+\*------------------------------------*/
+.banner-content-wrapper {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 100;
+}
+
+	.banner-content-wrapper .banner-content {
+		align-items: flex-end;
+		background: @background-banner-content;
+		border-bottom: 10px solid @color-primary;
+		display: flex;
+		height: 100%;
+		position: relative;
+		width: 100%;
+	}
+
+		.banner-content-wrapper .banner-copy {
+			background: @background-banner-copy;
+			padding: 40px 60px 50px 40px;
+			position: relative;
+		}
+
+			.banner-content-wrapper .banner-copy-text {
+				color: @color-banner-copy-text;
+				display: block;
+				font-family: @font-family-banner-copy-text;
+				font-size: @font-size-banner-copy-text;
+				font-weight: @font-weight-banner-copy-text;
+				letter-spacing: -0.04em;
+				line-height: 1;
+				margin-bottom: 8px;
+				text-transform: @text-transform-banner-copy-text;
+			}
+
+			.banner-content-wrapper .banner-copy-button {
+				display: block;
+				font-family: @font-family-banner-button;
+				font-size: @font-size-21;
+				font-weight: @font-weight-banner-copy-button;
+				line-height: 1;
+				text-transform: @text-transform-banner-copy-button;
+			}
+
+				.banner-content-wrapper .banner-copy-button a {
+					background: @background-banner-copy-button;
+					border: @border-banner-copy-button;
+					color: @color-banner-copy-button;
+					display: inline-block;
+					padding: 10px 20px;
+					text-decoration: none;
+				}
+
+				.banner-content-wrapper .banner-copy-button a:active,
+				.banner-content-wrapper .banner-copy-button a:focus,
+				.banner-content-wrapper .banner-copy-button a:hover {
+					background: @background-banner-copy-button-transition;
+					color: @color-banner-copy-button-transition;
+				}
+
+		.banner-content-wrapper .banner-link {
+			display: inline-block;
+			margin-left: auto;
+			position: relative;
+		}
+
+			.banner-content-wrapper .banner-link img {
+				width: 193px;
+				transition-duration: 0.5s;
+			}
+
+		.banner-content-wrapper .banner-link:active img,
+		.banner-content-wrapper .banner-link:focus img,
+		.banner-content-wrapper .banner-link:hover img {
+			opacity: 0.6;
+		}
+
+
+/*------------------------------------*\
+  #PAGE SPECIFIC STYLES
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  #MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {	
+}
+
+@media (min-width: 992px) {	
+	.banner-content-wrapper .banner-copy {
+		padding-right: 80px;
+	}
+	
+	.banner-content-wrapper .banner-copy-text {
+		font-size: @font-size-50;
+	}
+
+	.banner-content-wrapper .banner-copy-button {
+		font-size: @font-size-24;
+	}
+}
+
+@media (min-width: 1200px) {
+	.banner-content-wrapper .banner-copy {
+		padding-right: 100px;
+	}
+	
+	.banner-content-wrapper .banner-copy-text {
+		font-size: @font-size-70;
+	}
+}

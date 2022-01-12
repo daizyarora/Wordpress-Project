@@ -1,0 +1,192 @@
+/*------------------------------------*\
+#callouts-11
+\*------------------------------------*/
+.callouts-11-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.callouts-11-wrapper .callouts {
+    padding: 25px 0 0 0;
+}
+
+.callouts-11-wrapper .callouts-11-inner {
+    background-color: rgb(245, 241, 237, 1.0);
+    padding: 50px 0;
+    display: flex;
+}
+
+.callouts-11-wrapper .doctor-image {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.callouts-11-wrapper .callouts-11-title {
+    color: @color-black;
+    display: block;
+    font-size: clamp(@font-size-32, 4.359vw, @font-size-51);
+    font-weight: @font-weight-700;
+    font-family: @font-family-primary;
+    line-height: 1;
+    letter-spacing: 0.050em;
+    text-align: center;
+    text-transform: @text-transform-none;
+    margin-bottom: 50px;
+}
+
+.callouts-11-wrapper .callouts-11-copy {
+    color: @color-black-80;
+    display: block;
+    font-size: clamp(@font-size-17, 1.795vw, @font-size-21);
+    font-weight: @font-weight-300;
+    line-height: 1.71;
+    letter-spacing: 0.050em;
+    text-transform: @text-transform-none;
+    margin-bottom: 15px;
+}
+.years-experience {
+    position: absolute;
+    right: 5px;
+    top: -10px;
+    text-align: center;
+    border-radius: 100%;
+    padding: 10px;
+    border: 20px solid fade(@color-secondary, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    width: 110px;
+    color: @color-white;
+    z-index: 1;
+}
+.exp-txt{
+    background-color: @color-secondary;
+    border-radius: 100%;
+    padding: 16px 15px;
+}
+.years-experience h2 {
+    margin: 0;
+    font-weight:@font-weight-700;
+    font-size: @font-size-21;
+    color: @color-white;
+}
+.years-experience p {
+    margin: 0;
+    font-weight: @font-weight-700;
+    font-size: @font-size-12;
+}
+.doctor{
+    background: @color-secondary;
+    width: 288px;
+    height: 295px;
+    border-radius: 100%;
+    margin-top: 10px;
+}
+.doctor-img {
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    margin-top: 10px;
+    display: block;    
+    width: 285px;
+    height: 285px;
+    overflow: hidden;
+}
+/*------------------------------------*\
+#PAGE-SPECIFIC STYLES
+\*------------------------------------*/
+/*------------------------------------*\
+#MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {
+
+.years-experience{
+    right: 4px;
+    top: -10px;
+    height: 130px;
+    width: 130px;
+}
+.doctor {
+    width: 316px;
+    height: 325px;
+    margin-top: 20px;
+    }
+    .doctor-img {
+    width: 315px;
+    height: 315px;
+    margin-top: 20px;
+}
+}
+
+@media (min-width: 992px) {
+.doctor-img {
+    width: 450px;
+    height: 450px;
+}
+.doctor{
+    background: @color-secondary;
+    width: 453px;
+    height: 465px;
+}
+.years-experience {
+    height: 175px;
+    width: 175px;
+    right: 15px;
+    top: -15px;
+}
+.years-experience {
+    position: absolute;
+    right: 0px;
+    top: 0;
+}
+.exp-txt {
+    padding: 30px 27px;
+}.years-experience h2 {
+    font-size: @font-size-26;
+}
+.years-experience p {
+    font-size: @font-size-17;
+}
+}
+
+@media (min-width: 1200px) {
+
+.doctor-img {
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+}
+.doctor{
+    background: @color-secondary;
+    width: 503px;
+    height: 515px;
+    margin-top: 20px;
+}
+.years-experience {
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+.years-experience {
+    height: 210px;
+    width: 210px;
+}    
+.exp-txt{
+    padding: 30px 34px;
+}
+.years-experience h2 {
+    font-size: @font-size-45;
+}
+.years-experience p {
+    font-size: @font-size-21;
+}
+}
+
+@media (min-width: 1366px) {}
+
+@media (min-width: 1500px) {
+}

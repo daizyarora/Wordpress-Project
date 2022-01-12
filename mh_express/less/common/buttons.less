@@ -1,0 +1,57 @@
+/*------------------------------------*\
+  #BUTTONS DEFAULT 
+\*------------------------------------*/
+.btn-default {
+	background-color: @color-primary;
+	border-color: @color-primary;
+	color: @color-white;
+	text-transform: none;
+}
+
+	.btn-default:active, 
+	.btn-default:active:focus,
+	.btn-default:focus, 
+	.btn-default:focus:active,
+	.btn-default:hover  {
+		background-color: @color-primary;
+		border-color: fade(@color-secondary, 50%);
+		color: @color-white;
+		transition-duration: @transition-duration;
+	}
+	
+	.btn-default:disabled, 
+	.btn-default[disabled] {
+		background-color: rgb(204, 204, 204);
+		border-color: rgb(204, 204, 204);
+	}
+
+
+/*------------------------------------*\
+  #BUTTONS PRIMARY 
+\*------------------------------------*/
+/**
+ * form buttons are primary
+ */
+.btn-primary {
+	background-color: @color-primary;
+	border-color: @color-primary;
+	color: @color-white;
+	text-transform: uppercase;
+}
+
+	.btn-primary:active, 
+	.btn-primary:active:focus,
+	.btn-primary:focus, 
+	.btn-primary:focus:active,
+	.btn-primary:hover  {
+		background-color: @color-primary;
+		border-color: fade(@color-secondary, 50%);
+		color: @color-white;
+		transition-duration: @transition-duration;
+	}
+
+	.btn-primary:disabled, 
+	.btn-primary:disabled {
+		background-color: rgb(204, 204, 204);
+		border-color: rgb(204, 204, 204);
+	}

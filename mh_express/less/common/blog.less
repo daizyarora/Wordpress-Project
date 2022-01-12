@@ -1,0 +1,344 @@
+/*------------------------------------*\
+  #Blog
+\*------------------------------------*/
+
+/* =WordPress Core Styles (Source: https://codex.wordpress.org/CSS)
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #eee;
+	clip: auto !important;
+	clip-path: none;
+	color: #444;
+	display: block;
+	font-size: 1em;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+/* Additional custom styles
+-------------------------------------------------------------- */
+.lead {
+	font-size: 1em;
+}
+
+select#cat {
+    font-size: .75em;
+    width: 100%;
+}
+
+.vertical-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap
+}
+
+.post-info h2 {
+	margin: 0;
+	font-size: 2em;
+}
+
+.blog .post {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: rgba(51, 51, 51, 0.6);
+}
+
+.featured-margin {
+	margin-bottom: 1em;
+}
+
+.widgettitle {
+   font-size: 1.167em;
+   font-weight:300;
+}
+
+.page-header {
+    padding-bottom: 0;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid transparent;
+}
+.page-header a {
+	text-decoration: none;
+}
+
+.widget a {
+   font-size:0.778em;
+   font-weight: 300;
+   line-height: 1.111em;
+   letter-spacing: -0.025em;
+}
+
+a.label {
+   display: inline-block;
+   background:rgba(51, 51, 51, 0.6);
+   margin-right:10px;
+   font-size:0.778em;
+   padding:2px 5px;
+   text-decoration: none;
+}
+
+a.label:focus, a.label:hover {
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+   background:rgba(51, 51, 51, 0.4);
+}
+
+.meta {
+    font-size: 0.778em;
+}
+
+img.alignright {
+    float: right;
+    margin: 0 0 1em 1em
+}
+
+img.alignleft {
+    float: left;
+    margin: 0 1em 1em 0
+}
+
+img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+a img.alignright {
+    float: right;
+    margin: 0 0 1em 1em
+}
+
+a img.alignleft {
+    float: left;
+    margin: 0 1em 1em 0
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*!
+** Pagination
+*/
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+	background-color: #333;
+	border-color: #333;
+}
+
+.pagination > li > a,
+.pagination > li > a:focus, .pagination > li > a:hover, 
+.pagination > li > span:focus, 
+.pagination > li > span:hover {
+	color: #333;
+}
+
+/*!
+** WordPress Gallery
+*/
+.blog .gallery a.thumbnail {
+	border: none
+}
+.blog ul#gallery-nav li {
+	list-style: none;
+}
+
+/*!
+** Blog Headings
+*/
+.blog h1 a,
+.blog h2 a, 
+.blog h3 a, 
+.blog h4 a,
+.blog h5 a,
+.blog h6 a {
+	color: @color-primary;
+	display: block;
+	line-height: 1.4;
+}
+
+.blog h1 a:active,
+.blog h1 a:focus,
+.blog h1 a:hover,
+.blog h2 a:active,
+.blog h2 a:focus,
+.blog h2 a:hover,
+.blog h3 a:active,
+.blog h3 a:focus,
+.blog h3 a:hover,
+.blog h4 a:active,
+.blog h4 a:focus,
+.blog h4 a:hover,
+.blog h5 a:active,
+.blog h5 a:focus,
+.blog h5 a:hover,
+.blog h6 a:active,
+.blog h6 a:focus,
+.blog h6 a:hover {
+	color: fade(@color-primary, 50%);;
+}
+
+/*!
+** Blog Comments Form
+*/
+#commentform.form-horizontal .comment-form-cookies-consent label {
+	display: inline;
+}
+
+/*!
+** Blog Comments
+*/
+.comments-links {
+	display: flex;
+   	position: relative;
+}
+
+.comments-links-top {
+	margin-bottom: 25px;
+}
+
+	.comments-links a {
+	   	align-items: center;
+		display: inline-flex;
+		line-height: 1;
+		padding: 5px;
+	}
+
+	.comments-links a:first-of-type {
+	   	margin-right: 15px;
+	}
+
+.comments-list li {
+	list-style: none;
+}
+
+	.comments-list li {
+		margin-bottom: 20px;
+	}
+
+	.comments-list p {
+		margin-bottom: 10px;
+	}
+
+
+/*------------------------------------*\
+  #PAGE SPECIFIC STYLES
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  #MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}

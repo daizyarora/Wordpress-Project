@@ -1,0 +1,121 @@
+/*------------------------------------*\
+  #CYCLE CONTROLS
+\*------------------------------------*/
+.cycle-controls-wrapper {
+	bottom: 0;
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 105;
+}
+
+	.cycle-controls-wrapper .cycle-controls {
+		align-items: flex-end;
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		position: relative;
+		width: 100%;
+		z-index: 105;
+	}
+
+		.cycle-controls-wrapper .cycle-controls .cycle-controls-background {
+			padding: 5px 0;
+			width: 100%;
+		}
+
+			.cycle-controls-wrapper .cycle-controls-dark .cycle-controls-background {
+				background: rgba(32, 45, 48, 1);
+			}
+
+			.cycle-controls-wrapper .cycle-controls-light .cycle-controls-background {
+				background: rgba(230, 230, 230, 1.0);
+			}
+
+				.cycle-controls-wrapper .cycle-controls-outer {
+					margin: 0 auto;
+					padding: 0 15px;
+					text-align: right;
+					width: 100%;
+				}
+
+					.cycle-controls-wrapper .cycle-controls-inner {
+						align-items: center;
+						display: inline-flex;
+						justify-content: center;
+						position: relative;
+					}
+
+						.cycle-controls-wrapper .cycle-control {
+							cursor: pointer;
+							display: inline-block;
+							font-size: 1.25em;
+							line-height: 1;
+							pointer-events: auto;
+							transition-duration: 0.5s;
+						}
+
+						.cycle-controls-wrapper .cycle-controls-dark .cycle-control {
+							color: rgba(255, 255, 255, 0.85);
+						}
+
+						.cycle-controls-wrapper .cycle-controls-dark .cycle-control:active,
+						.cycle-controls-wrapper .cycle-controls-dark .cycle-control:focus,
+						.cycle-controls-wrapper .cycle-controls-dark .cycle-control:hover {
+							color: rgba(255, 255, 255, 0.75);
+						}
+
+						.cycle-controls-wrapper .cycle-controls-light .cycle-control {
+							color: rgba(22, 22, 22, 1.0);
+						}
+
+						.cycle-controls-wrapper .cycle-controls-light .cycle-control:active,
+						.cycle-controls-wrapper .cycle-controls-light .cycle-control:focus,
+						.cycle-controls-wrapper .cycle-controls-light .cycle-control:hover {
+							color: rgba(22, 22, 22, 0.5);
+						}
+
+							.cycle-controls-wrapper .cycle-prev {
+								margin-right: 25px;
+							}
+
+							.cycle-controls-wrapper .cycle-pause {
+								font-size: 1.4em;
+							}
+
+							.cycle-controls-wrapper .cycle-resume {
+								display: none;
+								font-size: 1.4em;
+							}
+
+							.cycle-controls-wrapper .cycle-next {
+								margin-left: 25px;
+							}
+
+/*------------------------------------*\
+  #PAGE-SPECIFIC STYLES
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  #MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {
+	.cycle-controls-wrapper .cycle-controls-outer {
+		width: 720px;
+	}
+}
+
+@media (min-width: 992px) {
+	.cycle-controls-wrapper .cycle-controls-outer {
+		width: 970px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.cycle-controls-wrapper .cycle-controls-outer {
+		width: 1170px;
+	}
+}

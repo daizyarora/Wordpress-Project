@@ -1,0 +1,114 @@
+@import "../variables.less";
+@import "../custom.less";
+
+/*------------------------------------*\
+  #CALLOUTS-9
+\*------------------------------------*/
+
+.callouts-9-wrapper {
+	position: relative;
+	z-index: 18;
+}
+
+	.callouts-9-wrapper .callouts {
+		background: @color-secondary;
+		margin-top: 20px;
+		padding: 8px 0;
+		position: relative;
+		z-index: 10;
+	}
+
+		.callouts-9-wrapper .callout-wrapper {
+			margin: 15px 0;
+			position: relative;
+		}
+
+			.callouts-9-wrapper .callout {
+				background: transparent;
+				border: 1px solid fade(@color-white, 50%);
+				box-shadow: 0 1px 2px 1px rgba(255, 255, 255, 0);
+				display: block;
+				font-size: @font-size-21;
+				line-height: 1;
+				padding: 10px 0;
+				text-align: center;
+				text-decoration: none;
+				transition-duration: 0.5s;
+			}
+
+				.callouts-9-wrapper .callout-text-line-1 {
+					color: fade(@color-white, 50%);
+					display: block;
+					font-family: @font-family-primary;
+					font-size: @font-size-36;
+					font-weight: @font-weight-700;
+					letter-spacing: 0.050em;
+					text-transform: @text-transform-none;
+					transition-duration: 0.5s;
+				}
+
+				.callouts-9-wrapper .callout-text-line-2 {
+					color: @color-white;
+					display: block;
+					font-family: @font-family-secondary;
+					font-size: @font-size-50;
+					font-weight: @font-weight-400;
+					text-transform: @text-transform-uppercase;
+					transition-duration: 0.5s;
+				}
+
+
+/*------------------------------------*\
+  #MEDIA QUERIES
+\*------------------------------------*/
+
+@media (min-width: 768px) {
+	.callouts-9-wrapper .callouts {
+		padding: 3px 0;
+	}
+	
+		.callouts-9-wrapper .callout-text-line-1 {
+			font-size: @font-size-36;
+		}
+
+		.callouts-9-wrapper .callout-text-line-2 {
+			font-size: @font-size-36;
+		}
+
+	.callouts-9-wrapper .callout:active,
+	.callouts-9-wrapper .callout:focus,
+	.callouts-9-wrapper .callout:hover {
+		box-shadow: 0 1px 2px 1px rgba(255, 255, 255, 0.9);
+	}
+	
+		.callouts-9-wrapper .callout:active .callout-text-line-1,
+		.callouts-9-wrapper .callout:focus .callout-text-line-1,
+		.callouts-9-wrapper .callout:hover .callout-text-line-1 {
+			color: @color-white;
+		}
+}
+
+@media (min-width: 992px) {
+	.callouts-9-wrapper {
+	}
+	
+		.callouts-9-wrapper .callouts {
+			padding: 0;
+		}
+
+			.callouts-9-wrapper .callout-text-line-2 {
+				font-size: @font-size-48;
+			}
+}
+
+@media (min-width: 1200px) {
+	.callouts-9-wrapper {
+	}
+	.callouts-9-wrapper .callout-text-line-1 {
+			font-size: @font-size-41;
+		}
+	
+		.callouts-9-wrapper .callout-text-line-2 {
+			font-size: @font-size-51;
+		}
+}

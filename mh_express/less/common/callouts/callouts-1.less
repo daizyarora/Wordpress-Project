@@ -1,0 +1,138 @@
+/*------------------------------------*\
+#MODULE
+\*------------------------------------*/
+.callouts-1-wrapper {
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+.callouts-1-wrapper .container-fluid,
+.callouts-1-wrapper .row,
+.callouts-1-wrapper [class*=col] {
+    padding: 0px;
+    margin: 0px;
+    border-right: 1px solid @color-white;
+    border-bottom: 1px solid @color-white;
+}
+
+.callouts-1-wrapper .callout-1-content {
+    padding: 20px 35px;
+    min-height: 123px;
+    display: flex;
+    transition:all 0.5s ease
+}
+
+.callouts-1-wrapper .callout-1-content a {
+    display: flex;
+    color: @color-white;
+    text-decoration: none;
+}
+
+.callouts-1-wrapper .callout-1-content a:active,
+.callouts-1-wrapper .callout-1-content a:hover,
+.callouts-1-wrapper .callout-1-content a:focus {
+    opacity: 1;
+}
+
+.callouts-1-wrapper .callout-1-icon {
+    padding-right: 15px;
+}
+
+.callouts-1-wrapper .callout-1-icon i {
+    color: @color-white;
+    font-size: font-size-24;
+}
+
+.callouts-1-wrapper .callout-1-title {
+    display: block;
+    font-size: @font-size-18;
+    font-weight: @font-weight-400;
+    line-height: 1.23;
+    letter-spacing: 0.100em;
+    padding-bottom: 10px;
+}
+
+.callouts-1-wrapper .callout-1-copy {
+    display: block;
+    font-size: @font-size-18;
+    font-weight: @font-weight-300;
+    line-height: 1.52;
+    letter-spacing: 0.100em;
+}
+
+.callouts-1-wrapper .col-sm-6:nth-of-type(1) .callout-1-content,
+.callouts-1-wrapper .col-sm-6:nth-of-type(4) .callout-1-content {
+    background: @color-primary;
+    transition:all 0.5s ease;
+}
+.callouts-1-wrapper .col-sm-6:nth-of-type(1) .callout-1-content:hover,
+.callouts-1-wrapper .col-sm-6:nth-of-type(4) .callout-1-content:hover {
+    background: fade(@color-primary, 90%);
+}
+
+.callouts-1-wrapper .col-sm-6:nth-of-type(2) .callout-1-content,
+.callouts-1-wrapper .col-sm-6:nth-of-type(3) .callout-1-content {
+    background: @color-primary;
+    transition:all 0.5s ease;
+}
+.callouts-1-wrapper .col-sm-6:nth-of-type(2) .callout-1-content:hover,
+.callouts-1-wrapper .col-sm-6:nth-of-type(3) .callout-1-content:hover {
+    background: fade(@color-primary, 90%);
+}
+
+/*------------------------------------*\
+#PAGE SPECIFIC STYLES
+\*------------------------------------*/
+/*------------------------------------*\
+#MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+    .callouts-1-wrapper .callout-1-content {
+        padding: 30px 35px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .callouts-1-wrapper .row {
+        display: flex;
+    }
+
+    .callouts-1-wrapper .callout-1-content {
+        height: 100%;
+    }
+
+    .callouts-1-wrapper .callout-1-content {
+        padding: 30px 45px 30px 35px;
+    }
+
+    .callouts-1-wrapper .col-sm-6:nth-of-type(odd) .callout-1-content {
+        background: @color-primary;
+    }
+.callouts-1-wrapper .callout-1-content {
+    border-left: 1px solid @color-white;
+    }
+ 
+    .callouts-1-wrapper .col-sm-6:nth-of-type(even) .callout-1-content {
+        background: @color-primary;
+    }
+    .callouts-1-wrapper .container-fluid,
+.callouts-1-wrapper .row,
+.callouts-1-wrapper [class*=col] {
+    border-right: none;
+    border-bottom: none;
+}
+
+}
+
+@media (min-width: 1500px) {
+    .callouts-1-wrapper .callout-1-content {
+        padding: 30px 65px 30px 45px;
+    }
+
+    .callouts-1-wrapper .col-sm-6:nth-of-type(2) .callout-1-content {
+        padding: 30px 30px 30px 45px;
+    }
+}

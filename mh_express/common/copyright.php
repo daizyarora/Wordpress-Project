@@ -1,0 +1,1 @@
+<?php $date = date("Y",time()); ?><!-- Design and markup copyright Market Hardware, Inc., 2010<?php echo $date > '2010' ? '-'.$date : ''; ?>. All rights reserved. This design and markup may only be used or hosted with permission of Market Hardware, Inc. -->

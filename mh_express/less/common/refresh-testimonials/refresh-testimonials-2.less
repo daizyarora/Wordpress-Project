@@ -1,0 +1,163 @@
+/*------------------------------------*\
+#REFRESH TESTIMONIALS 2
+\*------------------------------------*/
+.refresh-testimonials-2-wrapper {
+    margin-bottom: 5px;
+    padding: 30px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.refresh-testimonials-2-wrapper .refresh-testimonials-outer {
+    position: relative;
+    background-color: @color-primary;
+}
+
+.refresh-testimonials-2-wrapper .refresh-testimonials {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+} 
+
+.refresh-testimonials-2-wrapper .refresh-testimonials-inner {
+    background: @color-white;
+    padding-bottom: 15px;
+    position: relative;
+    text-align: center;
+}
+
+
+.refresh-testimonials-2-wrapper .refresh-testimonial {
+    position: relative;
+    margin-top: 10px;
+}
+
+.refresh-testimonials-2-wrapper .refresh-testimonial-testimony {
+    color: @color-black;
+    display: block;
+    font-family: @font-family-primary;
+    font-size: clamp(@font-size-21, 2.222vw, @font-size-26);
+    font-weight: @font-weight-400;
+    line-height: 1.6;
+    letter-spacing: 0;
+    margin-bottom: 8px;
+    text-transform: @text-transform-none;
+}
+
+.refresh-testimonials-2-wrapper .refresh-testimonial-testifier {
+    color: @color-black;
+    display: inline-block;
+    font-family: @font-family-primary;
+    font-size: clamp(@font-size-21, 2.222vw, @font-size-26);
+    font-weight: @font-weight-400;
+    line-height: 1.5;
+    letter-spacing: 0;
+    position: relative;
+    margin-bottom: 20px;
+    text-transform: @text-transform-none;
+}
+
+.refresh-testimonials-2-wrapper .refresh-testimonial-title {
+    display: block;
+    font-family: @font-family-primary;
+    text-align: center;
+    color: @color-black;
+    font-weight: @font-weight-400;
+    font-size: clamp(@font-size-26, 2.821vw, @font-size-33);
+    line-height: 1.39;
+    letter-spacing: 0.025em;
+    margin-bottom: 5px;
+}
+
+.refresh-testimonials-2-wrapper .refresh-review-social-button {
+    display: block;
+    position: relative;
+    font-family: @font-family-primary;
+    font-size: @font-size-17;
+    font-weight: @font-weight-400;
+    line-height: 1;
+    letter-spacing: 0.100em;
+    text-transform: @text-transform-none;
+}
+
+.refresh-testimonials-2-wrapper .refresh-review-social-button a {
+    text-decoration: none;
+    background: @color-secondary;
+    color: @color-white;
+    display: inline-flex;
+    padding: 0px 15px;
+    justify-content: center;
+    align-items: center;
+    min-height: 46px;
+}
+
+.refresh-testimonials-2-wrapper .refresh-review-social-button a:active,
+.refresh-testimonials-2-wrapper .refresh-review-social-button a:focus,
+.refresh-testimonials-2-wrapper .refresh-review-social-button a:hover {
+    color: fade(@color-white, 50%);
+
+}
+
+.refresh-testimonials-2-wrapper .refresh-review-social-text {
+    font-family: @font-family-primary;
+    color: @color-black;
+    font-size: @font-size-12;
+    font-weight: @font-weight-400;
+    letter-spacing: 0.025em;
+    display: block;
+    line-height: 1.3;
+    text-align: center;
+     padding-top: 20px;
+     margin: 0 auto;
+     max-width: 520px;
+}
+
+
+/*------------------------------------*\
+#PAGE SPECIFIC STYLES
+\*------------------------------------*/
+/*------------------------------------*\
+#MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {
+
+    .refresh-testimonials-2-wrapper .refresh-testimonial-testifier {
+        margin-bottom: 35px;
+    }
+ .refresh-testimonials-2-wrapper{
+       padding: 45px 0px;
+    }
+    .refresh-testimonials-2-wrapper .refresh-testimonials-inner {
+        padding-bottom:  15px;
+    }
+
+    .refresh-testimonials-2-wrapper .refresh-testimonial {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    
+    
+
+    
+}
+
+@media (min-width: 992px) {
+    .refresh-testimonials-2-wrapper{
+       padding: 65px 0px;
+    }
+    .refresh-testimonials-2-wrapper .refresh-testimonials-inner {
+        padding-bottom:  15px;
+    }
+    .refresh-testimonials-2-wrapper .refresh-testimonial-testifier {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .refresh-testimonials-2-wrapper {
+    padding: 80px 0px;
+}
+      
+}

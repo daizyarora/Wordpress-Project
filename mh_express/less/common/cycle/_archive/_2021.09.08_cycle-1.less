@@ -1,0 +1,85 @@
+/*------------------------------------*\
+  #CYCLE-1
+\*------------------------------------*/
+.cycle-1-wrapper {
+	position: relative;
+} 
+
+	.cycle-1-wrapper .banner {
+		background: url(https://s3.amazonaws.com/mh-cdn/smartpress/images/banner/banner-1/people/0064.jpg) 50% 0 no-repeat;
+		background-size: cover;
+		height: 300px;
+		position: absolute;
+		top: 97px;
+		width: 100%;
+		z-index: 1;
+	} 
+
+		.cycle-1-wrapper .cycle-slideshow {
+			backface-visibility: hidden;
+			/* added to fix firefox wiggle bug */
+			box-shadow: rgba(0, 0, 0, 0.01) 0.01em 0.01em 0.01em;
+			/* added to fix firefox wiggle bug */
+			position: relative;
+		}
+
+			.cycle-1-wrapper .cycle-slideshow img {
+				backface-visibility: hidden;
+				/* added to fix firefox wiggle bug */
+				box-shadow: rgba(0, 0, 0, 0.01) 0.01em 0.01em 0.01em;
+				/* added to fix firefox wiggle bug */
+				position: relative;
+			}
+
+			.cycle-1-wrapper .banner-slideshow {
+				background: transparent;
+				height: 0;
+				/* setting only applies to mobile see media queries */
+				position: relative;
+				width: 100%;
+			}
+
+
+/*------------------------------------*\
+  #PAGE-SPECIFIC STYLES
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  #MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) {
+	.cycle-1-wrapper .banner {
+		background: @background-cycle-1;
+		height: 600px;
+		padding-left: 0;
+		padding-right: 0;
+		top: 163px;
+	}
+	
+	.cycle-1-wrapper .banner-slideshow {
+		height: 600px;
+	}
+	
+        .cycle-1-wrapper .banner-slide-1{
+        background: url(https://s3.amazonaws.com/mh-cdn/smartpress/images/banner/banner-1/people/0064.jpg) 50% 0 no-repeat;
+        background-size: cover;
+    }
+	    .cycle-1-wrapper .banner-slide-2{
+        background: url(https://s3.amazonaws.com/mh-cdn/smartpress/images/banner/banner-1/people/0065.jpg) 50% 0 no-repeat;
+        background-size: cover;
+    }
+	    .cycle-1-wrapper .banner-slide-3{
+        background: url(https://s3.amazonaws.com/mh-cdn/smartpress/images/banner/banner-1/people/05.jpg) 50% 0 no-repeat;
+        background-size: cover;
+    }
+	}
+
+@media (min-width: 992px) {
+	.cycle-1-wrapper .banner {
+		top: 112px;
+	}
+}
+
+@media (min-width: 1200px) {
+}

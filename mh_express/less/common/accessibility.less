@@ -1,0 +1,307 @@
+/*------------------------------------*\
+  #ACCESSIBILITY
+\*------------------------------------*/
+/*!
+** Global classes for No Style page view
+*/
+.br-a11y {
+    display: none;
+}
+
+/*!
+** Link: main a
+*/
+main a {
+	background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+	background-position: bottom 0.05em center;
+	background-repeat: repeat-x;
+	background-size: 100% 0.05em;
+	text-decoration: none;
+	text-shadow: 0.05em 0 0 #fff, -0.05em 0 0 #fff, 0 0.05em 0 #fff,
+	0 -0.05em 0 #fff, 0.1em 0 0 #fff, -0.1em 0 0 #fff, 0 0.1em 0 #fff,
+	0 -0.1em 0 #fff;
+}
+
+main a:active,
+main a:focus,
+main a:hover {
+	background-image: none;
+	text-decoration: none;
+	text-shadow: none;
+}
+
+/*!
+** Exceptions to 'Link: main a' rule:
+*/
+.styleguide main a {
+	background-image: none;
+	text-shadow: none;
+}
+
+main a.img-link {
+	background-image: none;
+	text-shadow: none;
+}
+
+main a.click-to-call,
+a.click-to-call {
+	background-image: none;
+	text-shadow: none;
+}
+
+main .mp-editable p strong a {
+	background-image: none;
+	text-shadow: none;
+}
+
+main a.btn-primary {
+	background-image: none;
+	text-shadow: none;
+}
+
+main a[data-gallery] {
+	background-image: none;
+	text-shadow: none;
+}
+
+main .grecaptcha-notice a {
+	background-image: none;
+	text-shadow: none;
+}
+
+main .mh-btn-dark a {
+	background-image: none;
+	text-shadow: none;
+}
+
+main .mh-btn-light a {
+	background-image: none;
+	text-shadow: none;
+}
+
+main .team .title a {
+	text-shadow: none;
+}
+
+main ul.links li a {
+	background-image: none;
+	text-shadow: none;
+}
+
+.accessibility-statement main a {
+	background-image: none;
+	text-shadow: none;
+}
+
+.blog main a {
+	background-image: none;
+	text-shadow: none;
+}
+
+.single main a {
+	background-image: none;
+	text-shadow: none;
+}
+
+/*!
+** Link: 'Skip to Main Content'
+*/
+[href="#main"] {
+	display: inline-block;
+	min-height: 40px;
+	min-width: 40px;
+	position: absolute;
+	right: 100%;
+	top: 0;
+	z-index: 21;
+}
+
+[href="#main"]:active,
+[href="#main"]:focus,
+[href="#main"]:hover {
+ 	right: auto; 
+} 
+
+/*!
+** Links: External
+*/
+a[target=_blank]::after {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url("@{theme-base-uri}/design/accessibility/external-icon-blue.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60% auto;
+    content: "(external link)";
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 1em;
+}
+
+a.btn[target=_blank]::after {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url("@{theme-base-uri}/design/accessibility/external-icon-white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60% auto;
+    content: "(external link)";
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 1em;
+}
+
+/*!
+** Exceptions to 'Links: External' rule:
+*/
+a.external-icon-none[target=_blank]::after {
+    display: none!important;
+}
+
+a.btn.external-icon-none[target=_blank]::after {
+    display: none!important;
+}
+
+main a.img-link[target="_blank"]:after {
+	display: none;
+}
+
+.social-media-1 a[target="_blank"]:after,
+.social-media-2 a[target="_blank"]:after{
+  	display: none;
+}
+
+.footer-legal a[target="_blank"]::after {
+    display: none;
+}
+
+/*!
+** Accessibility links lists, e.g. /sitemap/
+*/
+.links-a11y {
+  display: inline-block;
+}
+
+	.links-a11y li {
+		font-size: 0.95em;
+		line-height: 1.5em;
+		margin-bottom: 0.2em;
+	}
+
+		.links-a11y .dropdown {
+			display: block;
+			padding: 0.1em 0.5em 0.2em;
+		}
+
+		.links-a11y .dropdown-link {
+			display: block;
+			padding: 0.1em 0 0.2em;
+		}
+
+			.links-a11y li a {
+				background-image: none;
+				color: @color-primary;
+				display: block;
+				padding: 0.1em 0.5em 0.2em;
+				text-decoration: none;
+				text-shadow: none;
+			}
+
+			.links-a11y li a:active,
+			.links-a11y li a:focus,
+			.links-a11y li a:hover {
+				background: @color-primary;
+				color: @color-white;
+			}
+
+/*!
+** Social Media
+*/
+.social-media-1 .social-media-whitespace, 
+.social-media-2 .social-media-whitespace {
+	display: none;
+}
+
+.social-media-1 a .social-media-link-text, 
+.social-media-2 a .social-media-link-text {
+	color: rgba(255, 255, 255, 1.0);
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}
+
+/*!
+** Forms
+*/
+.datepicker-caption {
+	height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}
+
+.form-horizontal .label-substitute {
+    font-size: 0.889em;
+    font-weight: 300;
+}
+
+.form-horizontal .label-text {
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}
+
+/*!
+** Carousels
+*/
+.carousel-controls-wrapper .carousel-control-text {
+	color: rgba(255, 255, 255, 1.0);
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}
+
+.carousel-1-wrapper .carousel-indicator-text {
+	color: rgba(255, 255, 255, 1.0);
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}
+
+/*------------------------------------*\
+  #PAGE SPECIFIC STYLES
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  #MEDIA QUERIES
+\*------------------------------------*/
+@media print {
+	/*body > *:not(main) { 
+		display: none; }*/
+} 
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,120 @@
+/*------------------------------------*\
+  #LISTS
+\*------------------------------------*/
+/**
+ * Circles
+**/
+.column-bullet-circle {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+	.column-bullet-circle li {
+		color: orange;
+	}
+
+	.column-bullet-circle.circle-close li:before {
+		color: inherit;
+		content: "\f111 \0020"; /* circle-closed */
+		display: inline-block;
+		font-family: FontAwesome;
+		font-size: 0.556em;
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+
+	.column-bullet-circle.circle-open li:before {
+		color: inherit;
+		content: "\f10c \0020"; /* circle-open */
+		display: inline-block;
+		font-family: FontAwesome;
+		font-size: 0.556em;
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+
+	.column-bullet-circle.circle-dot li:before {
+		color: inherit;
+		content: "\f192 \0020";  /* circle-dot */
+		display: inline-block;
+		font-family: FontAwesome;
+		font-size: 0.556em;
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+
+	.column-bullet-circle.circle-bullseye li:before {
+		color: inherit;
+		content: "\f140 \0020"; /* circle-bullseye */
+		display: inline-block;
+		font-family: FontAwesome;
+		font-size: 0.556em;
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+
+/**
+ * Checks
+**/
+.column-bullet-check {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+	.column-bullet-check li {
+		color: orange;
+	}
+
+	.column-bullet-check.check-normal li:before {
+		color: inherit;
+		content: "\f00c \0020";/* check */
+		font-family: FontAwesome;
+	}
+
+	.column-bullet-check.check-circle-close li:before {
+		color: inherit;
+		content: "\f058 \0020";/* check-circle */
+		font-family: FontAwesome;
+	}
+
+	.column-bullet-check.check-circle-open li:before {
+		color: inherit;
+		content: "\f05d \0020";/* check-circle-o */
+		font-family: FontAwesome;
+	}
+
+	.column-bullet-check.check-square-open li:before {
+		color: inherit;
+		content: "\f046 \0020";/* check-square-o */
+		font-family: FontAwesome;
+	}
+	
+/**
+ * Plus Sign
+**/
+.column-bullet-plus {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+	
+	.column-bullet-plus li {
+		color: orange;
+		padding: 5px 0 5px 30px;
+		position: relative;
+		text-transform: uppercase;
+	}
+	
+	.column-bullet-plus li:before {
+		color: inherit;
+		content: "+";
+		display: inline-block;
+		font-size: 2.222em;	
+		left: 0;
+		line-height: 1em;
+		position: absolute;
+		top: -6px;
+		vertical-align: top;
+	}

@@ -1,0 +1,127 @@
+/*------------------------------------*\
+  #TOP BAR
+\*------------------------------------*/
+.top-bar-wrapper {
+	position: relative;
+	width: 100%;
+	z-index: 105;
+}
+
+	.top-bar-wrapper .top-bar {
+		background: rgba(0, 178, 172, 1.0);
+		line-height: 1;
+		padding: 13px 0;
+		position: relative;
+	}
+
+		.top-bar-wrapper .top-bar-content {
+			align-items: center;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			position: relative;
+		}
+
+			.top-bar-wrapper .top-bar-text {
+				color: @color-white;
+				display: inline-block;
+				font-family: "Jost";
+				font-size: @font-size-17;
+				font-weight: @font-weight-400;
+				text-transform: @text-transform-none;
+			}
+
+			.top-bar-wrapper .top-bar-btn {
+				display: inline-block;
+				font-family: "Jost";
+				font-size: @font-size-17;
+				font-weight: @font-weight-400;
+				margin: 8px 15px;
+				text-transform: @text-transform-uppercase;
+			}
+
+				.top-bar-wrapper .top-bar-btn a {
+					background: @color-white;
+					border-radius: 100px;
+					color: rgba(0, 178, 172, 1.0);
+					display: inline-block;
+					padding: 6px 18px;
+					text-decoration: none;
+					text-transform: @text-transform-uppercase;
+					transition-duration: 0.5s;
+				}
+
+				.top-bar-wrapper .top-bar-btn a:active,
+				.top-bar-wrapper .top-bar-btn a:focus,
+				.top-bar-wrapper .top-bar-btn a:hover {
+					color: fade(rgba(0, 178, 172, 1.0), 50%);
+				}
+
+			.top-bar-wrapper .top-bar-links {
+				position: relative;
+				text-align: center;
+			}
+
+				.top-bar-wrapper .top-bar-link {
+					display: inline-block;
+					font-family: "Jost";
+					font-size: @font-size-17;
+					font-weight: @font-weight-400;
+					padding: 5px 8px;
+					text-transform: @text-transform-none;
+				}
+
+				.top-bar-wrapper .top-bar-link:last-of-type {
+					margin-right: 0;
+				}
+
+					.top-bar-wrapper .top-bar-link a {
+						color: @color-white;
+						display: block;
+						text-decoration: none;
+					}
+
+						.top-bar-wrapper .top-bar-link a i {
+							margin-right: 4px;
+						}
+
+					.top-bar-wrapper .top-bar-link a:active,
+					.top-bar-wrapper .top-bar-link a:focus,
+					.top-bar-wrapper .top-bar-link a:hover {
+						color: fade(@color-white, 50%);
+					}
+
+
+/*------------------------------------*\
+  #PAGE SPECIFIC STYLES
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  #MEDIA QUERIES
+\*------------------------------------*/
+@media (min-width: 768px) { 
+	.top-bar-wrapper .top-bar-btn {
+		margin-top: 0;
+	}
+}
+
+@media (min-width: 992px) {
+	.top-bar-wrapper {
+		left: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+	}
+	
+		.top-bar-wrapper .top-bar-btn {
+			margin-bottom: 0;
+		}
+	
+		.top-bar-wrapper .top-bar-links {
+			margin-left: auto;
+		}
+}
+
+@media (min-width: 1200px) {
+}

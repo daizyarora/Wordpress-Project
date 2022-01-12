@@ -1,0 +1,199 @@
+@import "colors.less";
+
+/*------------------------------------*\
+  #COLORS: GENERAL
+\*------------------------------------*/
+/*
+** Black
+*/
+@color-black: rgba(22, 22, 22, 1.0);
+@color-black-50: fade(@color-black, 50%);
+
+/*
+** White
+*/
+@color-white: rgba(255, 255, 255, 1.0);
+
+
+/*------------------------------------*\
+  #FONTS: GENERAL
+\*------------------------------------*/
+/*
+** Font Families
+*/
+@font-family-alegreya: 'Alegreya', serif;
+@font-family-alegreya-sc: 'Alegreya SC', serif;
+@font-family-alegreya-sans: 'Alegreya Sans', sans-serif;
+@font-family-alegreya-sans-sc: 'Alegreya Sans SC', sans-serif;
+@font-family-aleo: 'Aleo', serif;
+@font-family-alice: 'Alice', serif;
+@font-family-amaranth: 'Amaranth', sans-serif;
+@font-family-amatic: 'Amatic SC', cursive;
+@font-family-amiri: 'Amiri', serif;
+@font-family-arimo: 'Arimo', sans-serif;
+@font-family-arvo: 'Arvo', serif;
+@font-family-bree-serif: 'Bree Serif', serif;
+@font-family-cabin: 'Cabin', sans-serif;
+@font-family-candal: 'Candal', sans-serif;
+@font-family-cantata-one: 'Cantata One', serif;
+@font-family-cardo: 'Cardo', serif;
+@font-family-cinzel: 'Cinzel', serif;
+@font-family-cormorant: 'Cormorant', serif;
+@font-family-cormorant-upright: 'Cormorant Upright', serif;
+@font-family-courgette: 'Courgette', cursive;
+@font-family-days-one: 'Days One', sans-serif;
+@font-family-dosis: 'Dosis', sans-serif;
+@font-family-eb-garamond: 'EB Garamond', serif;
+@font-family-fira-sans: 'Fira Sans', sans-serif;
+@font-family-fira-sans-condensed: 'Fira Sans Condensed', sans-serif;
+@font-family-fjalla-one: 'Fjalla One', sans-serif;
+@font-family-gravitas-one: 'Gravitas One', cursive;
+@font-family-hind: 'Hind', sans-serif;
+@font-family-josefin-slab: 'Josefin Slab', serif;
+@font-family-jost: 'Jost', sans-serif;
+@font-family-kaushan-script: 'Kaushan Script', cursive;
+@font-family-lato: 'Lato', sans-serif;
+@font-family-lobster-two: 'Lobster Two', cursive;
+@font-family-lora: 'Lora', serif;
+@font-family-libre-baskerville: 'Libre Baskerville', serif;
+@font-family-lusitana: 'Lusitana', serif;
+@font-family-maitree: 'Maitree', serif;
+@font-family-maven-pro: 'Maven Pro', sans-serif;
+@font-family-merriweather: 'Merriweather', serif;
+@font-family-michroma: 'Michroma', sans-serif;
+@font-family-montserrat: 'Montserrat', sans-serif;
+@font-family-montserrat-alternates: 'Montserrat Alternates', sans-serif;
+@font-family-muli: 'Muli', sans-serif;
+@font-family-noto-serif: 'Noto Serif', serif;
+@font-family-nunito: 'Nunito', sans-serif;
+@font-family-open-sans: 'Open Sans', sans-serif;
+@font-family-oswald: 'Oswald', sans-serif;
+@font-family-philosopher: 'Philosopher', sans-serif;
+@font-family-playfair-display: 'Playfair Display', serif;
+@font-family-podkova: 'Podkova', serif;
+@font-family-poiret-one: 'Poiret One', cursive;
+@font-family-poppins: 'Poppins', sans-serif;
+@font-family-pt-sans: 'PT Sans', sans-serif;
+@font-family-pt-sans-narrow: 'PT Sans Narrow', sans-serif;
+@font-family-pt-serif: 'PT Serif', serif;
+@font-family-questrial: 'Questrial', sans-serif;
+@font-family-quicksand: 'Quicksand', sans-serif;
+@font-family-raleway: 'Raleway', sans-serif;
+@font-family-righteous: 'Righteous', cursive;
+@font-family-roboto: 'Roboto', sans-serif;
+@font-family-roboto-condensed: 'Roboto Condensed', sans-serif;
+@font-family-sanchez: 'Sanchez', serif;
+@font-family-short-stack: 'Short Stack', cursive;
+@font-family-source-sans-pro: 'Source Sans Pro', sans-serif;
+@font-family-source-serif-pro: 'Source Serif Pro', serif;
+@font-family-special-elite: 'Special Elite', cursive;
+@font-family-stardos-stencil: 'Stardos Stencil', cursive;
+@font-family-tinos: 'Tinos', serif;
+@font-family-ubuntu: 'Ubuntu', sans-serif;
+@font-family-waiting-for-the-sunrise: 'Waiting for the Sunrise', cursive;
+@font-family-work-sans: 'Work Sans', sans-serif;
+@font-family-zilla-slab: 'Zilla Slab', serif;
+
+
+/*
+** Font Sizes
+*/
+@font-size-10: 0.48em;
+@font-size-11: 0.52em;
+@font-size-12: 0.57em;
+@font-size-13: 0.62em;
+@font-size-14: 0.66em;
+@font-size-15: 0.71em;
+@font-size-16: 0.76em;
+@font-size-17: 0.8em;
+@font-size-18: 0.86em;
+@font-size-19: 0.9em;
+@font-size-20: 0.95em;
+@font-size-21: 1em;
+@font-size-22: 1.05em;
+@font-size-23: 1.09em;
+@font-size-24: 1.14em;
+@font-size-25: 1.19em;
+@font-size-26: 1.24em;
+@font-size-27: 1.29em;
+@font-size-28: 1.33em;
+@font-size-29: 1.38em;
+@font-size-30: 1.43em;
+@font-size-31: 1.48em;
+@font-size-32: 1.5em;
+@font-size-33: 1.57em;
+@font-size-34: 1.62em;
+@font-size-35: 1.66em;
+@font-size-36: 1.71em;
+@font-size-37: 1.76em;
+@font-size-38: 1.81em;
+@font-size-39: 1.86em;
+@font-size-40: 1.9em;
+@font-size-41: 1.95em;
+@font-size-42: 2em;
+@font-size-43: 2.05em;
+@font-size-44: 2.10em;
+@font-size-45: 2.14em;
+@font-size-46: 2.19em;
+@font-size-47: 2.24em;
+@font-size-48: 2.29em;
+@font-size-49: 2.33em;
+@font-size-50: 2.38em;
+@font-size-51: 2.43em;
+@font-size-52: 2.48em;
+@font-size-53: 2.52em;
+@font-size-54: 2.57em;
+@font-size-55: 2.62em;
+@font-size-56: 2.66em;
+@font-size-57: 2.71em;
+@font-size-58: 2.76em;
+@font-size-59: 2.81em;
+@font-size-60: 2.86em;
+@font-size-61: 2.9em;
+@font-size-62: 2.95em;
+@font-size-63: 3em;
+@font-size-70: 3.33em;
+@font-size-80: 3.8em;
+
+
+/*
+** Font Weights
+*/
+@font-weight-100: 100;
+@font-weight-200: 200;
+@font-weight-300: 300;
+@font-weight-400: 400;
+@font-weight-500: 500;
+@font-weight-600: 600;
+@font-weight-700: 700;
+@font-weight-800: 800;
+@font-weight-900: 900;
+
+
+/*------------------------------------*\
+  #MARGINS
+\*------------------------------------*/
+@margin-1em: 1em;
+@margin-2em: 2em;
+@margin-5: 5px;
+@margin-10: 10px;
+@margin-15: 15px;
+@margin-20: 20px;
+@margin-30: 30px;
+@margin-45: 45px;
+@margin-60: 60px;
+
+
+/*------------------------------------*\
+  #TEXT
+\*------------------------------------*/
+@text-transform-none: none;
+@text-transform-lowercase: lowercase;
+@text-transform-uppercase: uppercase;
+
+
+/*------------------------------------*\
+  #TRANSITIONS
+\*------------------------------------*/
+@transition-duration: 0.5s;
+
